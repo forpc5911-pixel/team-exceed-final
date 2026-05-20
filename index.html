@@ -23,7 +23,7 @@ body{font-family:var(--font-sans);background:var(--white);color:var(--ink);font-
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--sand-dark);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:64px;transition:box-shadow .2s}
-.nav-logo{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.02em;line-height:1.2;cursor:pointer}
+.nav-logo{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.02em;line-height:1.2}
 .nav-logo span{color:var(--forest)}
 .nav-logo small{display:block;font-family:var(--font-sans);font-size:.58rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-top:1px}
 .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
@@ -58,15 +58,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,
 .hero-stat-num span{color:var(--forest)}
 .hero-stat-label{font-size:.775rem;color:var(--ink-soft);letter-spacing:.03em;margin-top:4px}
 .hero-right{height:100%;min-height:92vh;display:grid;grid-template-rows:1fr 1fr;grid-template-columns:1fr 1fr;gap:10px;padding:74px 5% 20px 10px}
-.hero-img-main{grid-row:1/3;grid-column:1;border-radius:var(--card-radius);overflow:hidden;background:#c8d5c0}
+.hero-img-main{grid-row:1/3;grid-column:1;border-radius:var(--card-radius);overflow:hidden;background:#ddd}
 .hero-img-main img,.hero-img-sm img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.hero-img-sm{border-radius:var(--card-radius);overflow:hidden;background:#c8d5c0;position:relative}
+.hero-img-sm{border-radius:var(--card-radius);overflow:hidden;background:#ddd;position:relative}
 .hero-agent-name{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff;font-size:.7rem;font-weight:500;letter-spacing:.04em;padding:6px 12px;border-radius:100px;text-align:center}
 
 /* ── TEAM STRIP ── */
 .team-strip{background:var(--sand);padding:2.5rem 8%;display:flex;align-items:center;gap:3rem;flex-wrap:wrap;border-bottom:1px solid var(--sand-dark)}
 .team-agent{display:flex;align-items:center;gap:1rem}
-.team-agent-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--forest);flex-shrink:0;background:var(--forest-pale)}
+.team-agent-avatar{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--forest);flex-shrink:0}
 .team-agent-name{font-family:var(--font-serif);font-size:1rem;font-weight:600;color:var(--ink);line-height:1.2}
 .team-agent-role{font-size:.75rem;color:var(--ink-soft);letter-spacing:.02em}
 .team-strip-divider{width:1px;height:40px;background:var(--sand-dark)}
@@ -91,7 +91,7 @@ section{padding:6rem 8%}
 .prop-card{background:var(--white);border-radius:var(--card-radius);overflow:hidden;position:relative;transition:transform .25s,box-shadow .25s;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .prop-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.13)}
 .prop-card.hidden{display:none}
-.prop-img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .4s;background:var(--sand-dark)}
+.prop-img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .4s;background:#e8e2d6}
 .prop-card:hover .prop-img{transform:scale(1.04)}
 .prop-img-wrap{position:relative;overflow:hidden}
 .prop-img-count{position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);color:#fff;font-size:.68rem;font-weight:500;padding:3px 9px;border-radius:100px;display:flex;align-items:center;gap:4px}
@@ -120,9 +120,6 @@ section{padding:6rem 8%}
 .gallery-prev{left:16px}
 .gallery-next{right:16px}
 .gallery-counter{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.55);backdrop-filter:blur(6px);color:#fff;font-size:.72rem;font-weight:500;padding:5px 14px;border-radius:100px;letter-spacing:.04em}
-.gallery-dots{position:absolute;bottom:50px;left:50%;transform:translateX(-50%);display:flex;gap:6px;max-width:200px;overflow:hidden}
-.gallery-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;transition:background .2s;flex-shrink:0}
-.gallery-dot.active{background:#fff}
 .modal-close{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);border:none;color:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;z-index:3;transition:background .2s}
 .modal-close:hover{background:rgba(0,0,0,.8)}
 .modal-body{padding:2.5rem}
@@ -139,7 +136,7 @@ section{padding:6rem 8%}
 .modal-desc-title{font-family:var(--font-serif);font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:.75rem}
 .modal-desc{font-size:.95rem;color:var(--ink-mid);line-height:1.8;font-weight:300;margin-bottom:2rem}
 .modal-agent{background:var(--sand);border-radius:12px;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1.25rem;margin-bottom:2rem;flex-wrap:wrap}
-.modal-agent-img{width:60px;height:60px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--forest);flex-shrink:0;background:var(--forest-pale)}
+.modal-agent-img{width:60px;height:60px;border-radius:50%;object-fit:cover;object-position:top center;border:2.5px solid var(--forest);flex-shrink:0}
 .modal-agent-info-name{font-family:var(--font-serif);font-size:1rem;font-weight:600;color:var(--ink)}
 .modal-agent-info-role{font-size:.75rem;color:var(--ink-soft)}
 .modal-agent-actions{margin-left:auto;display:flex;gap:.75rem;flex-wrap:wrap}
@@ -161,17 +158,12 @@ section{padding:6rem 8%}
 .modal-form-success.show{display:block}
 .modal-form-success .ok-icon{font-size:2rem;margin-bottom:.5rem}
 .modal-form-success p{color:var(--forest);font-weight:500;font-size:.95rem}
-.modal-sold-info{background:var(--clay-pale);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:2rem;border-left:4px solid var(--clay)}
-.modal-sold-info h4{font-family:var(--font-serif);font-size:.95rem;font-weight:600;color:var(--ink);margin-bottom:.5rem}
-.modal-sold-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-.modal-sold-item label{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);display:block}
-.modal-sold-item span{font-size:.9rem;font-weight:500;color:var(--ink)}
 
 /* ── ABOUT ── */
 .about-section{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .about-images{position:relative;height:540px}
-.about-img-main{width:58%;height:430px;object-fit:cover;object-position:top center;border-radius:var(--card-radius);position:absolute;top:0;left:0;background:var(--forest-pale)}
-.about-img-accent{width:52%;height:300px;object-fit:cover;object-position:top center;border-radius:var(--card-radius);position:absolute;bottom:0;right:0;border:6px solid var(--white);box-shadow:0 8px 32px rgba(0,0,0,.1);background:var(--sand)}
+.about-img-main{width:58%;height:430px;object-fit:cover;object-position:top center;border-radius:var(--card-radius);position:absolute;top:0;left:0}
+.about-img-accent{width:52%;height:300px;object-fit:cover;object-position:top center;border-radius:var(--card-radius);position:absolute;bottom:0;right:0;border:6px solid var(--white);box-shadow:0 8px 32px rgba(0,0,0,.1)}
 .about-card-float{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--white);border-radius:12px;padding:16px 20px;box-shadow:0 8px 32px rgba(0,0,0,.12);text-align:center;min-width:130px;z-index:2}
 .about-card-float .num{font-family:var(--font-serif);font-size:1.8rem;font-weight:600;color:var(--forest)}
 .about-card-float .lbl{font-size:.72rem;color:var(--ink-soft);letter-spacing:.04em}
@@ -211,13 +203,9 @@ section{padding:6rem 8%}
 .af-label{font-size:.75rem;font-weight:500;color:var(--ink-mid);letter-spacing:.03em}
 .af-input{padding:11px 14px;border:1.5px solid var(--sand-dark);border-radius:10px;font-family:var(--font-sans);font-size:.875rem;color:var(--ink);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s;width:100%}
 .af-input:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(42,92,69,.1)}
-.af-input.error{border-color:var(--clay)}
-.af-error{font-size:.72rem;color:var(--clay);margin-top:2px;display:none}
-.af-error.show{display:block}
 .af-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237A7A7A' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:36px}
 .af-submit{grid-column:1/-1;background:var(--forest);color:var(--white);border:none;padding:14px 28px;border-radius:10px;font-family:var(--font-sans);font-size:.9rem;font-weight:500;cursor:pointer;transition:background .2s,transform .15s;display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:.25rem}
 .af-submit:hover{background:var(--forest-light);transform:translateY(-1px)}
-.af-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .af-success{display:none;text-align:center;padding:2rem 1rem}
 .af-success.show{display:block}
 .af-success-icon{font-size:3rem;margin-bottom:1rem}
@@ -256,7 +244,7 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 .footer-col h4{font-size:.8rem;font-weight:500;color:var(--white);letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem}
 .footer-col ul{list-style:none}
 .footer-col ul li{margin-bottom:.5rem}
-.footer-col ul a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.85rem;transition:color .2s;cursor:pointer}
+.footer-col ul a{color:rgba(255,255,255,.45);text-decoration:none;font-size:.85rem;transition:color .2s}
 .footer-col ul a:hover{color:rgba(255,255,255,.85)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;font-size:.775rem;flex-wrap:wrap;gap:.75rem}
 .no-sale-badge{background:var(--forest);color:var(--white);font-size:.7rem;font-weight:600;letter-spacing:.06em;padding:5px 14px;border-radius:100px;text-transform:uppercase}
@@ -267,6 +255,12 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 .whatsapp-btn svg{width:28px;height:28px;fill:#fff}
 .whatsapp-tooltip{position:absolute;right:68px;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);color:#fff;font-size:.75rem;font-family:var(--font-sans);font-weight:500;padding:6px 12px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
 .whatsapp-btn:hover .whatsapp-tooltip{opacity:1}
+
+/* ── LOADING SPINNER ── */
+.props-loading{text-align:center;padding:3rem 1rem;color:var(--ink-mid)}
+.props-spinner{width:36px;height:36px;border:3px solid var(--sand-dark);border-top-color:var(--forest);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+.props-error{text-align:center;padding:2rem;color:var(--clay);font-size:.9rem}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1100px){
@@ -315,7 +309,6 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
   .modal-gallery{height:260px}
   .modal-stats{grid-template-columns:repeat(2,1fr)}
   .gallery-btn{width:36px;height:36px;font-size:1rem}
-  .modal-sold-grid{grid-template-columns:1fr}
 }
 @media(max-width:400px){
   .hero h1{font-size:2rem}
@@ -328,7 +321,7 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="#" class="nav-logo">Scott <span>&amp;</span> Stuart<small>Whakatāne &amp; Bay of Plenty</small></a>
+  <a href="#" class="nav-logo">Scott <span>&amp;</span> Stuart<small>New Zealand · Arizto Network</small></a>
   <ul class="nav-links">
     <li><a href="#properties">Properties</a></li>
     <li><a href="#about">About</a></li>
@@ -350,7 +343,7 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 <!-- HERO -->
 <section class="hero" style="padding:0;" aria-label="Hero">
   <div class="hero-left">
-    <div class="hero-tag">Whakatāne · Ōhope · Bay of Plenty</div>
+    <div class="hero-tag">New Zealand · Arizto Network</div>
     <h1>Your Local Experts in <em>Bay of Plenty</em> Real Estate</h1>
     <p class="hero-sub">Scott Jarrett &amp; Stuart Lougher — Team Exceed — bring unrivalled local knowledge and zero upfront cost. Selling or buying is completely risk-free.</p>
     <div class="hero-actions">
@@ -359,21 +352,21 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
     </div>
     <div class="hero-stats">
       <div><div class="hero-stat-num">57<span>+</span></div><div class="hero-stat-label">Properties Sold</div></div>
-      <div><div class="hero-stat-num">15<span>+</span></div><div class="hero-stat-label">Years Experience</div></div>
+      <div><div class="hero-stat-num">25<span>+</span></div><div class="hero-stat-label">Years Experience</div></div>
       <div><div class="hero-stat-num">$0</div><div class="hero-stat-label">Upfront Cost</div></div>
     </div>
   </div>
   <div class="hero-right" aria-hidden="true">
     <div class="hero-img-main">
-      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&auto=format&fit=crop" alt="Scott Jarrett" loading="lazy">
+      <img src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Team Exceed" style="object-position:top center">
     </div>
     <div class="hero-img-sm">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&auto=format&fit=crop" alt="Stuart Lougher" loading="lazy">
-      <div class="hero-agent-name">Scott Jarrett — Licensed Salesperson</div>
+      <img src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619040-bhqWinSmpVfF7qRG6GSykzL8BAXxmfVs.jpg" alt="Whakatane Property">
+      <div class="hero-agent-name">Scott Jarrett · Whakatāne</div>
     </div>
     <div class="hero-img-sm">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&auto=format&fit=crop" alt="Bay of Plenty property" loading="lazy">
-      <div class="hero-agent-name">Stuart Lougher — Licensed Salesperson</div>
+      <img src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg" alt="Whakatane Home">
+      <div class="hero-agent-name">Stuart Lougher · Ōhope</div>
     </div>
   </div>
 </section>
@@ -381,54 +374,126 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 <!-- TEAM STRIP -->
 <div class="team-strip">
   <div class="team-agent">
-    <div class="team-agent-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1.2rem;font-weight:600;color:var(--forest)">SJ</div>
-    <div><div class="team-agent-name">Scott Jarrett</div><div class="team-agent-role">Licensed Salesperson REAA 2008</div></div>
+    <img class="team-agent-avatar" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Team Exceed">
+    <div>
+      <div class="team-agent-name">Scott Jarrett</div>
+      <div class="team-agent-role">Licensed Salesperson · REAA 2008</div>
+    </div>
   </div>
   <div class="team-strip-divider"></div>
   <div class="team-agent">
-    <div class="team-agent-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1.2rem;font-weight:600;color:var(--forest)">SL</div>
-    <div><div class="team-agent-name">Stuart Lougher</div><div class="team-agent-role">Licensed Salesperson REAA 2008</div></div>
+    <img class="team-agent-avatar" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Stuart Lougher">
+    <div>
+      <div class="team-agent-name">Stuart Lougher</div>
+      <div class="team-agent-role">Licensed Salesperson · REAA 2008</div>
+    </div>
   </div>
   <div class="team-strip-divider"></div>
-  <p class="team-strip-info">Specialists in <strong>Whakatāne, Ōhope &amp; Bay of Plenty</strong>. We cover every cost upfront — you never pay unless we deliver results.</p>
+  <div class="team-strip-info">
+    <strong>Team Exceed</strong> — Whakatāne / Ōhope / Edgecumbe.<br>
+    Combined 25+ years experience. Awards for achievement in sales.<br>
+    <strong>027 493 8019</strong> · team.exceed@arizto.co.nz
+  </div>
 </div>
 
 <!-- PROPERTIES -->
 <section class="properties-section" id="properties">
   <div class="properties-header">
     <div>
-      <div class="section-label">Listings</div>
-      <h2 class="section-title">Our <em>Properties</em></h2>
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Our <em>Listings</em></h2>
     </div>
     <div class="filter-tabs">
-      <button class="filter-tab active" onclick="filterProps('all',this)">All</button>
-      <button class="filter-tab" onclick="filterProps('sale',this)">For Sale</button>
-      <button class="filter-tab" onclick="filterProps('sold',this)">Sold</button>
+      <button class="filter-tab active" onclick="switchTab('active',this)" id="tab-active">My Listings (<span id="cnt-active">6</span>)</button>
+      <button class="filter-tab" onclick="switchTab('sold',this)" id="tab-sold">My Sold Listings (<span id="cnt-sold">57</span>)</button>
     </div>
   </div>
-  <div class="properties-grid" id="props-grid"></div>
+
+  <div id="loading-active" class="props-loading" style="display:none">
+    <div class="props-spinner"></div>Loading active listings…
+  </div>
+  <div id="loading-sold" class="props-loading" style="display:none">
+    <div class="props-spinner"></div>Loading sold listings…
+  </div>
+
+  <!-- Active Listings Grid -->
+  <div class="properties-grid" id="grid-active"></div>
+  <!-- Sold Listings Grid -->
+  <div class="properties-grid" id="grid-sold" style="display:none"></div>
 </section>
 
-<!-- ABOUT -->
-<section class="about-section" id="about">
-  <div class="about-images">
-    <img class="about-img-main" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop" alt="Scott Jarrett" loading="lazy">
-    <img class="about-img-accent" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop" alt="Stuart Lougher" loading="lazy">
-    <div class="about-card-float"><div class="num">57</div><div class="lbl">Homes Sold</div></div>
-  </div>
-  <div class="about-content">
-    <span class="section-label">About Team Exceed</span>
-    <h2 class="section-title">Local Knowledge, <em>Real Results</em></h2>
-    <p class="about-text">Scott Jarrett and Stuart Lougher are Whakatāne-born real estate specialists with a combined 15+ years of experience across the Bay of Plenty region. We founded Team Exceed on one principle: every client deserves honest advice, transparent pricing, and zero upfront risk.</p>
-    <p class="about-text">From Ōhope beachfront escapes to rural lifestyle blocks in the Eastern Bay, we know every street, every school zone, every market nuance. Our no-sale, no-fee model means our success is entirely tied to yours.</p>
-    <div class="about-chips">
-      <span class="chip">Whakatāne Specialists</span>
-      <span class="chip">Ōhope Beach</span>
-      <span class="chip">Eastern Bay of Plenty</span>
-      <span class="chip">$0 Upfront</span>
-      <span class="chip">Licensed REAA 2008</span>
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOnBg(event)">
+  <div class="modal" id="modal">
+    <div class="modal-gallery" id="modal-gallery">
+      <button class="gallery-btn gallery-prev" onclick="galleryNav(-1)">&#8592;</button>
+      <button class="gallery-btn gallery-next" onclick="galleryNav(1)">&#8594;</button>
+      <div class="gallery-counter" id="gallery-counter">1 / 1</div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
-    <a href="#appraisal" class="btn-primary">Book a Free Appraisal<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <div class="modal-body">
+      <div class="modal-meta">
+        <span class="modal-badge" id="modal-badge">For Sale</span>
+        <span class="modal-price" id="modal-price"></span>
+      </div>
+      <div class="modal-address" id="modal-address">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <span></span>
+      </div>
+      <div class="modal-stats" id="modal-stats"></div>
+      <div class="modal-desc-title">About this property</div>
+      <div class="modal-desc" id="modal-desc"></div>
+      <div class="modal-agent">
+        <img class="modal-agent-img" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Team Exceed">
+        <div>
+          <div class="modal-agent-info-name">Team Exceed</div>
+          <div class="modal-agent-info-role">Scott Jarrett &amp; Stuart Lougher · Whakatāne / Ōhope / Edgecumbe</div>
+        </div>
+        <div class="modal-agent-actions">
+          <a href="tel:027 493 8019" class="modal-btn-call">📞 027 493 8019</a>
+          <a href="https://wa.me/64274938019" class="modal-btn-wa" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+      <div class="modal-enquiry-title">Send an Enquiry</div>
+      <div class="modal-form">
+        <input type="text" placeholder="Your name" id="mf-name">
+        <input type="email" placeholder="Email address" id="mf-email">
+        <input type="tel" placeholder="Phone number" class="full" id="mf-phone">
+        <textarea placeholder="Your message…" id="mf-msg">I'd like more information about this property.</textarea>
+        <button class="modal-form-submit" onclick="submitEnquiry()">Send Enquiry →</button>
+        <div class="modal-form-success" id="mf-success">
+          <div class="ok-icon">✅</div>
+          <p>Thanks! We'll be in touch shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-section">
+    <div class="about-images">
+      <img class="about-img-main" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Team Exceed">
+      <img class="about-img-accent" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg" alt="Whakatane">
+      <div class="about-card-float"><div class="num">57+</div><div class="lbl">Properties Sold</div></div>
+    </div>
+    <div class="about-content">
+      <span class="section-label">About the Team</span>
+      <h2 class="section-title">Born &amp; Raised in <em>Whakatāne</em></h2>
+      <p class="about-text">Scott and Stuart's combined years in the industry make them the most experienced agents in our district. When it comes to skillsets required to perform effectively — customer relations, negotiating a sale, qualifying buyers — many agents, despite some time in the industry, are still learning what is just instinctive to this team.</p>
+      <p class="about-text">Both are well known in the community and have contributed meaningfully. Stuart was chair of the Whakatane Community Patrol for 10 years, and Scott served 12 years on the District Council — third generation of his family to do so. Scott is still active in Theatre Whakatane, on committee and in productions.</p>
+      <p class="about-text">When working with these guys, there is a genuine element of trust; they communicate well, and both have received notable awards for achievement in sales.</p>
+      <div class="about-chips">
+        <span class="chip">25+ Years Experience</span>
+        <span class="chip">Award-Winning</span>
+        <span class="chip">Whakatāne Locals</span>
+        <span class="chip">Community Leaders</span>
+        <span class="chip">No Upfront Costs</span>
+        <span class="chip">Licensed REAA 2008</span>
+      </div>
+      <a href="#appraisal" class="btn-primary" style="display:inline-flex">Get Free Appraisal <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
   </div>
 </section>
 
@@ -437,17 +502,17 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
   <div class="services-header">
     <div>
       <div class="section-label">What We Offer</div>
-      <h2 class="section-title">How We <em>Help You</em></h2>
+      <h2 class="section-title">A <em>Smarter</em> Way to Sell</h2>
     </div>
-    <p class="services-intro">From your first call to settlement day, Team Exceed handles everything. No upfront fees, no nasty surprises — just straightforward Bay of Plenty real estate done right.</p>
+    <p class="services-intro">Arizto's model removes the traditional barriers — no upfront marketing fees, transparent commissions, and dedicated local expertise that gives your home the attention it deserves.</p>
   </div>
   <div class="services-grid">
-    <div class="service-item"><div class="service-num">01</div><div class="service-title">Free Property Appraisal</div><div class="service-desc">Know exactly what your home is worth in today's market. No obligations, no fees — just an honest assessment backed by real local data.</div></div>
-    <div class="service-item"><div class="service-num">02</div><div class="service-title">Professional Photography</div><div class="service-desc">We cover the cost of premium photography, aerial drone footage, and floor plans to present your property at its absolute best.</div></div>
-    <div class="service-item"><div class="service-num">03</div><div class="service-title">Targeted Marketing</div><div class="service-desc">Your listing reaches the right buyers across Trade Me, realestate.co.nz, social media, and our extensive local buyer database.</div></div>
-    <div class="service-item"><div class="service-num">04</div><div class="service-title">Negotiation Excellence</div><div class="service-desc">15+ years of Bay of Plenty negotiations means we know how to achieve the best price while keeping the process smooth for you.</div></div>
-    <div class="service-item"><div class="service-num">05</div><div class="service-title">Buyer Matching</div><div class="service-desc">We maintain an active database of qualified buyers actively searching in Whakatāne, Ōhope and the wider Eastern Bay of Plenty.</div></div>
-    <div class="service-item"><div class="service-num">06</div><div class="service-title">No Sale, No Fee</div><div class="service-desc">Our unique model means you pay nothing upfront and nothing if we don't sell. Your risk is zero. Our motivation is everything.</div></div>
+    <div class="service-item"><div class="service-num">01</div><div class="service-title">No Upfront Costs</div><div class="service-desc">Zero marketing fees until your property sells. Total financial peace of mind from day one.</div></div>
+    <div class="service-item"><div class="service-num">02</div><div class="service-title">Transparent Pricing</div><div class="service-desc">Fair, clear commission structure. No hidden fees, no surprises — just honest, professional service.</div></div>
+    <div class="service-item"><div class="service-num">03</div><div class="service-title">Digital-First Marketing</div><div class="service-desc">Professional photography, high-reach digital listings, and targeted campaigns reaching motivated buyers.</div></div>
+    <div class="service-item"><div class="service-num">04</div><div class="service-title">Local Expertise</div><div class="service-desc">Deep roots in Whakatāne, Ōhope, and Edgecumbe. We know every street, every suburb, every opportunity.</div></div>
+    <div class="service-item"><div class="service-num">05</div><div class="service-title">Proven Negotiators</div><div class="service-desc">25+ combined years of negotiation experience. We get you the best price with confidence.</div></div>
+    <div class="service-item"><div class="service-num">06</div><div class="service-title">Free Property Appraisal</div><div class="service-desc">Understand your property's true market value with a comprehensive, obligation-free appraisal.</div></div>
   </div>
 </section>
 
@@ -456,34 +521,41 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
   <div class="appraisal-inner">
     <div class="appraisal-left">
       <span class="section-label">Free Appraisal</span>
-      <h2 class="section-title">What's Your Home <em>Worth?</em></h2>
-      <p class="appraisal-tagline">Find out what your property is worth in today's Bay of Plenty market — completely free, no obligation, and no pushy sales pitch.</p>
+      <h2 class="section-title">Know Your Home's <em>True Value</em></h2>
+      <p class="appraisal-tagline">Get a comprehensive, no-obligation property appraisal from Whakatāne's most experienced team. We'll give you an honest assessment and a clear picture of what your property could achieve in today's market.</p>
       <ul class="appraisal-points">
-        <li>Detailed market analysis based on recent comparable sales</li>
-        <li>Honest, realistic pricing — no inflated estimates to win listings</li>
-        <li>No upfront costs — ever. You pay only when your home sells</li>
-        <li>Professional photography and marketing included at no charge</li>
-        <li>Personal attention from Scott or Stuart, not an assistant</li>
+        <li>Comprehensive market analysis for your area</li>
+        <li>Zero cost, zero obligation — completely risk-free</li>
+        <li>Honest, data-driven pricing recommendations</li>
+        <li>Strategic advice on maximising your sale price</li>
+        <li>Full digital marketing plan included</li>
       </ul>
     </div>
-    <div class="appraisal-form-card" id="af-wrap">
-      <h3 class="appraisal-form-title">Book Your Free Appraisal</h3>
-      <p class="appraisal-form-sub">We'll be in touch within 24 hours to arrange a time.</p>
-      <div id="af-form-inner">
-        <div class="af-grid">
-          <div class="af-group"><label class="af-label">First Name</label><input class="af-input" id="af-fname" type="text" placeholder="John"><div class="af-error" id="af-fname-err">Required</div></div>
-          <div class="af-group"><label class="af-label">Last Name</label><input class="af-input" id="af-lname" type="text" placeholder="Smith"><div class="af-error" id="af-lname-err">Required</div></div>
-          <div class="af-group"><label class="af-label">Phone</label><input class="af-input" id="af-phone" type="tel" placeholder="021 000 0000"><div class="af-error" id="af-phone-err">Required</div></div>
-          <div class="af-group"><label class="af-label">Email</label><input class="af-input" id="af-email" type="email" placeholder="john@email.com"><div class="af-error" id="af-email-err">Valid email required</div></div>
-          <div class="af-group full"><label class="af-label">Property Address</label><input class="af-input" id="af-addr" type="text" placeholder="12 Main Street, Whakatāne"><div class="af-error" id="af-addr-err">Required</div></div>
-          <div class="af-group full"><label class="af-label">How Can We Help?</label><select class="af-input af-select" id="af-type"><option value="">Select...</option><option>Sell my property</option><option>Buy a property</option><option>Just finding out value</option><option>Investment advice</option></select></div>
-          <button class="af-submit" id="af-btn" onclick="submitAppraisal()">Book Free Appraisal <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    <div>
+      <div class="appraisal-form-card">
+        <div class="appraisal-form-title">Book Your Free Appraisal</div>
+        <div class="appraisal-form-sub">We'll be in touch within 24 hours</div>
+        <div class="af-grid" id="af-form">
+          <div class="af-group"><label class="af-label">First Name</label><input class="af-input" type="text" placeholder="Jane" id="af-fname"></div>
+          <div class="af-group"><label class="af-label">Last Name</label><input class="af-input" type="text" placeholder="Smith" id="af-lname"></div>
+          <div class="af-group full"><label class="af-label">Email Address</label><input class="af-input" type="email" placeholder="jane@example.com" id="af-email"></div>
+          <div class="af-group full"><label class="af-label">Phone Number</label><input class="af-input" type="tel" placeholder="027 XXX XXXX" id="af-phone"></div>
+          <div class="af-group full"><label class="af-label">Property Address</label><input class="af-input" type="text" placeholder="12 Example Street, Whakatane" id="af-addr"></div>
+          <div class="af-group full"><label class="af-label">Are You Looking to…</label>
+            <select class="af-input af-select" id="af-intent">
+              <option>Sell my property</option>
+              <option>Buy a property</option>
+              <option>Both buy and sell</option>
+              <option>Just exploring my options</option>
+            </select>
+          </div>
+          <button class="af-submit" onclick="submitAppraisal()">Request Free Appraisal →</button>
         </div>
-      </div>
-      <div class="af-success" id="af-success">
-        <div class="af-success-icon">✅</div>
-        <h3>Request Received!</h3>
-        <p>Thanks! Scott or Stuart will be in touch within 24 hours to arrange your free appraisal.</p>
+        <div class="af-success" id="af-success">
+          <div class="af-success-icon">🎉</div>
+          <h3>Appraisal Booked!</h3>
+          <p>Thank you. Scott or Stuart will be in touch within 24 hours to arrange your free property appraisal.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -495,46 +567,31 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
   <h2 class="section-title">What Our Clients <em>Say</em></h2>
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"Scott and Stuart were absolutely incredible. They sold our Ōhope beach house in just 11 days and got us $40k over asking. Their local knowledge is second to none."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--forest-pale);color:var(--forest)">MK</div><div><div class="author-name">Mark & Karen T.</div><div class="author-location">Ōhope Beach</div></div></div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"Scott and Stuart are absolute professionals. They guided us through the whole process seamlessly and got us a fantastic price for our Whakatane home. Couldn't recommend them more highly."</p>
+      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--forest-pale);color:var(--forest)">MJ</div><div><div class="author-name">Mark & Jenny T.</div><div class="author-location">Whakatane</div></div></div>
     </div>
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"No upfront costs meant we could list with confidence. The marketing was exceptional — professional photos and social media ads that actually brought real buyers through the door."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--clay-pale);color:var(--clay)">JP</div><div><div class="author-name">Jennifer P.</div><div class="author-location">Whakatāne</div></div></div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"The no upfront cost model was what first attracted us, but it was the service that kept us. Scott is always available, always honest, and always working in our best interests."</p>
+      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--clay-pale);color:var(--clay)">SB</div><div><div class="author-name">Sarah B.</div><div class="author-location">Ōhope Beach</div></div></div>
     </div>
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"We were nervous first-time sellers but Scott walked us through every step. Honest, patient, and got us a result we couldn't have imagined. Highly recommend Team Exceed."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--sand);color:var(--ink)">DW</div><div><div class="author-name">David & Wendy H.</div><div class="author-location">Edgecumbe</div></div></div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"Stuart found us our dream lifestyle block when nothing was even listed. He knew about the property before it hit the market. That's the local advantage you can't get anywhere else."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--forest-pale);color:var(--forest)">RC</div><div><div class="author-name">Ryan & Claire N.</div><div class="author-location">Matatā</div></div></div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"I tried another agency first and got nowhere. Switched to Team Exceed and sold within 3 weeks. Should have called Scott and Stuart from the start."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--clay-pale);color:var(--clay)">LM</div><div><div class="author-name">Linda M.</div><div class="author-location">Whakatāne</div></div></div>
-    </div>
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <p class="testimonial-text">"Communication was outstanding throughout. We were kept informed at every step, and they negotiated a fantastic price. Professional, friendly and genuinely committed."</p>
-      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--sand);color:var(--ink)">TB</div><div><div class="author-name">Tom & Bex F.</div><div class="author-location">Ōhope</div></div></div>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p class="testimonial-text">"Stuart's local knowledge is second to none. He knew exactly what buyers in Edgecumbe were looking for and we sold in record time. Excellent communication throughout."</p>
+      <div class="testimonial-author"><div class="author-avatar-init" style="background:var(--sand-mid);color:var(--ink-mid)">RL</div><div><div class="author-name">Rob L.</div><div class="author-location">Edgecumbe</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-section">
-  <span class="section-label">Get Started Today</span>
-  <h2 class="cta-title">Ready to Make Your Move?</h2>
-  <p class="cta-sub">Whether you're selling, buying or just curious about your home's value — we're here to help with zero pressure and zero upfront cost.</p>
+  <span class="section-label">Ready to Start?</span>
+  <h2 class="cta-title">Let's Talk About Your Property</h2>
+  <p class="cta-sub">Whether you're buying, selling, or just exploring — we'd love to hear from you. No pressure, no obligation.</p>
   <div class="cta-btns">
     <a href="#appraisal" class="btn-white">Book Free Appraisal</a>
-    <a href="tel:+6421000000" class="btn-white-outline"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.54a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>Call Scott or Stuart</a>
+    <a href="tel:027 493 8019" class="btn-white-outline">📞 027 493 8019</a>
   </div>
 </section>
 
@@ -542,439 +599,372 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 <footer>
   <div class="footer-top">
     <div>
-      <div class="footer-brand">Scott <span>&amp;</span> Stuart</div>
-      <p class="footer-tagline">Team Exceed — Bay of Plenty real estate specialists. Licensed under REAA 2008. No upfront costs, ever.</p>
+      <div class="footer-brand">Team <span>Exceed</span></div>
+      <p class="footer-tagline">Scott Jarrett &amp; Stuart Lougher · Whakatāne / Ōhope / Edgecumbe · Licensed REAA 2008 · Arizto Network</p>
     </div>
     <div class="footer-col">
       <h4>Navigate</h4>
       <ul>
-        <li><a onclick="document.getElementById('properties').scrollIntoView({behavior:'smooth'})">Properties</a></li>
-        <li><a onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</a></li>
-        <li><a onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Services</a></li>
-        <li><a onclick="document.getElementById('testimonials').scrollIntoView({behavior:'smooth'})">Stories</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Areas</h4>
-      <ul>
-        <li><a>Whakatāne</a></li>
-        <li><a>Ōhope Beach</a></li>
-        <li><a>Edgecumbe</a></li>
-        <li><a>Matatā</a></li>
-        <li><a>Eastern Bay of Plenty</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#appraisal">Book Appraisal</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-        <li><a href="tel:+6421000000">Scott: 021 000 0000</a></li>
-        <li><a href="tel:+6421000001">Stuart: 021 000 0001</a></li>
-        <li><a href="mailto:scott@teamexceed.co.nz">scott@teamexceed.co.nz</a></li>
-        <li><a href="mailto:stuart@teamexceed.co.nz">stuart@teamexceed.co.nz</a></li>
+        <li><a href="tel:027 493 8019">027 493 8019</a></li>
+        <li><a href="mailto:team.exceed@arizto.co.nz">team.exceed@arizto.co.nz</a></li>
+        <li><a href="https://www.arizto.co.nz/our-people/profile/scott-jarrett/" target="_blank">View on Arizto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="https://www.arizto.co.nz/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></li>
+        <li><a href="https://www.arizto.co.nz/privacy-policy/" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://www.arizto.co.nz/guidance-and-complaints/" target="_blank">REA Guidance</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Team Exceed. Licensed under REAA 2008. All rights reserved.</span>
-    <span class="no-sale-badge">No Sale · No Fee</span>
+    <span>© 2025 Team Exceed · Scott Jarrett &amp; Stuart Lougher · Arizto Ltd</span>
+    <span class="no-sale-badge">No Upfront Cost · Ever</span>
   </div>
 </footer>
 
 <!-- WHATSAPP -->
-<a class="whatsapp-btn" href="https://wa.me/6421000000?text=Hi%20Team%20Exceed%2C%20I%27d%20like%20to%20enquire%20about%20a%20property." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="whatsapp-btn" href="https://wa.me/64274938019" target="_blank" aria-label="WhatsApp Team Exceed">
   <span class="whatsapp-tooltip">Chat with us</span>
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- PROPERTY MODAL -->
-<div class="modal-overlay" id="prop-modal" onclick="handleModalClick(event)">
-  <div class="modal" id="modal-inner">
-    <div class="modal-gallery" id="modal-gallery">
-      <button class="gallery-btn gallery-prev" onclick="galleryNav(-1)" aria-label="Previous">‹</button>
-      <button class="gallery-btn gallery-next" onclick="galleryNav(1)" aria-label="Next">›</button>
-      <div class="gallery-counter" id="gallery-counter">1 / 1</div>
-      <div class="gallery-dots" id="gallery-dots"></div>
-      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
-    </div>
-    <div class="modal-body">
-      <div class="modal-meta">
-        <span class="modal-badge" id="modal-badge">For Sale</span>
-        <span class="modal-price" id="modal-price"></span>
-      </div>
-      <div class="modal-address" id="modal-address">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <span id="modal-address-text"></span>
-      </div>
-      <div class="modal-stats" id="modal-stats"></div>
-      <div id="modal-sold-info"></div>
-      <div class="modal-desc-title">About This Property</div>
-      <div class="modal-desc" id="modal-desc"></div>
-      <div class="modal-agent">
-        <div class="modal-agent-img" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1.2rem;font-weight:600;color:var(--forest)" id="modal-agent-avatar">SJ</div>
-        <div><div class="modal-agent-info-name" id="modal-agent-name">Scott Jarrett</div><div class="modal-agent-info-role">Licensed Salesperson REAA 2008</div></div>
-        <div class="modal-agent-actions">
-          <a href="tel:+6421000000" class="modal-btn-call"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.54a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>Call</a>
-          <a href="https://wa.me/6421000000" target="_blank" rel="noopener" class="modal-btn-wa"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
-        </div>
-      </div>
-      <div id="modal-enquiry-wrap">
-        <div class="modal-enquiry-title">Send an Enquiry</div>
-        <div class="modal-form" id="modal-form">
-          <input type="text" placeholder="Your Name" id="enq-name">
-          <input type="email" placeholder="Email Address" id="enq-email">
-          <input type="tel" placeholder="Phone Number" class="full" id="enq-phone">
-          <textarea placeholder="Your message..." id="enq-msg"></textarea>
-          <button class="modal-form-submit" onclick="submitEnquiry()">Send Enquiry <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-          <div class="modal-form-success" id="enq-success"><div class="ok-icon">✅</div><p>Message sent! We'll be in touch shortly.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script>
-// ─── PROPERTY DATA ───────────────────────────────────────────────
-const IMGS = [
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&auto=format&fit=crop',
+// ═══════════════════════════════════════════════
+// PROPERTY DATA — All properties from Arizto
+// ═══════════════════════════════════════════════
+const AGENT_PHOTO = "https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg";
+
+const ACTIVE_PROPERTIES = [
+  {
+    id:"p-active-1",
+    title:"Luxurious Family Oasis on Appenzell Drive",
+    address:"53 Appenzell Drive, Whakatane",
+    price:"",
+    status:"sale",
+    beds:3,baths:2,garage:1,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619040-bhqWinSmpVfF7qRG6GSykzL8BAXxmfVs.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619040-bhqWinSmpVfF7qRG6GSykzL8BAXxmfVs.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618955-RJDCodSJfxYnHBl45n6jkK6BFfUwclMS.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619043-iCSdwh6WLg9HwFVzMlGglIPGNQinYORv.jpg"],
+    url:"https://www.arizto.co.nz/property-search/53-appenzell-drive-whakatane/",
+    desc:"Indulge in luxurious family living with this beautifully refreshed 3 bedroom in a coveted hilltop location with beautiful views over a lush bush escarpment. Perfectly positioned between Whakatane's vibrant CBD and the golden sands of Ohope Beach, this impeccable home offers a rare blend of luxury, space, and proximity to local parks, nearby playgrounds, walking trails, and amenities. A freshly updated dream kitchen takes centre stage, featuring quality appliances, a stylish ocean-blue splashback, and a spacious breakfast bar. Contact Scott Jarrett 027 493 8019 for more information."
+  },
+  {
+    id:"p-active-2",
+    title:"Quiet Living for Singles or Couples on Strathmore!",
+    address:"11A Strathmore Place, Whakatane",
+    price:"",
+    status:"sale",
+    beds:1,baths:1,garage:1,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg"],
+    url:"https://www.arizto.co.nz/property-search/11a-strathmore-place-whakatane/",
+    desc:"A delightful one bedroom unit in a desirable area of Whakatane. Located in a peaceful cul-de-sac, it has a generous outdoor space, a screened deck, and it's ready for you to put your own mark on it! Perfect for singles or couples, this is a neat and tidy home for those who like to keep things simple. It offers a galley kitchen with good storage, combination bathroom and laundry, a double bedroom and open plan living. Large internal access garage, easy parking, and plenty of space outside. A quiet spot by the Council Reserve, handy to the Whakatane Hospital, Whakatane River, and Pak n Save. Contact Scott Jarrett for more information."
+  },
+  {
+    id:"p-active-3",
+    title:"Home With A Guest Cabin",
+    address:"67 Salonika Street, Whakatane",
+    price:"",
+    status:"sale",
+    beds:3,baths:1,garage:1,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730526-lH7NYp1uIXb4S59ZoUlROwdJkbRLYKQZ.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730526-lH7NYp1uIXb4S59ZoUlROwdJkbRLYKQZ.jpg"],
+    url:"https://www.arizto.co.nz/property-search/67-salonika-street-whakatane/",
+    desc:"A wonderful family home with the bonus of a separate guest cabin. Call Stuart Lougher or Scott Jarrett from Team Exceed at Arizto today to arrange your viewing."
+  },
+  {
+    id:"p-active-4",
+    title:"Seriously good value here!",
+    address:"12 Woodlands Road, Opotiki",
+    price:"",
+    status:"sale",
+    beds:3,baths:1,garage:1,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719357032-M7fowb4txrQdH5XqlLDQJmpLDnJzU8oD.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719357032-M7fowb4txrQdH5XqlLDQJmpLDnJzU8oD.jpg"],
+    url:"https://www.arizto.co.nz/property-search/12-woodlands-road-opotiki/",
+    desc:"Seriously good value in Opotiki! Contact Scott Jarrett on 0274 938 019 for information or viewings for this property."
+  },
+  {
+    id:"p-active-5",
+    title:"Home with Bonus 3 Room Studio",
+    address:"70 Henderson Street, Whakatane",
+    price:"",
+    status:"sale",
+    beds:4,baths:2,garage:2,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618955-RJDCodSJfxYnHBl45n6jkK6BFfUwclMS.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618955-RJDCodSJfxYnHBl45n6jkK6BFfUwclMS.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619043-iCSdwh6WLg9HwFVzMlGglIPGNQinYORv.jpg"],
+    url:"https://www.arizto.co.nz/property-search/70-henderson-street-whakatane/",
+    desc:"This is more than a home. It's a property that balances character, spaciousness and a location most only dream of. Opportunities to live this close to the riverside in Whakatāne don't come often. Out the back fence you're met with a natural border that changes with the seasons — tranquil, grounding, and unmistakably Whakatāne. Ōhope Beach is within easy reach, while schools, shops, and the town centre are close enough to keep life absolutely convenient. Call Team Exceed at Arizto today."
+  },
+  {
+    id:"p-active-6",
+    title:"Tidy, Tranquil and Turnkey Ready",
+    address:"11 Peter Snell Street, Whakatane",
+    price:"",
+    status:"sale",
+    beds:2,baths:1,garage:1,floor:"",land:"",
+    img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730553-NhiT2JaSLDYVyBuKoqwKqwaTxf4r9z95.jpg",
+    imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730553-NhiT2JaSLDYVyBuKoqwKqwaTxf4r9z95.jpg"],
+    url:"https://www.arizto.co.nz/property-search/11-peter-snell-street-whakatane/",
+    desc:"Tucked quietly in a well-kept pocket of Whakatane, this neat and inviting two-bedroom home delivers the ease and comfort that make everyday life feel effortless. With its single-level layout, low-maintenance design, and sunny indoor-outdoor flow, it's a home that suits first-home buyers, downsizers, or anyone seeking a relaxed base close to town. A freestanding wood burner keeps things cozy in cooler months. Contact Team Exceed today to arrange your viewing."
+  }
 ];
 
-const props = [
-  // ─── FOR SALE (6) ─────────────────────────────────────────────
-  {
-    id:1, status:'sale', badge:'For Sale', isNew:true,
-    price:'$895,000', address:'14 Surf Road, Ōhope Beach, Whakatāne 3121',
-    title:'Beachside Family Home', beds:4, baths:2, garages:2, land:'742m²',
-    desc:'An exceptional beachside family home positioned just metres from the famous Ōhope Beach. This beautifully presented four-bedroom home offers an open-plan living and dining space that flows effortlessly to a wraparound deck — perfect for entertaining while enjoying sea views. The modern kitchen features stone benchtops and quality appliances. The master bedroom includes a walk-in wardrobe and ensuite. Double internal garage plus off-street parking. The landscaped section provides ample space for children and summer living. Located minutes from the village, local cafes and boat ramp. Properties in this coastal position rarely become available — don\'t miss this rare opportunity.',
-    imgs:[IMGS[0],IMGS[1],IMGS[2],IMGS[3]],
-    agent:'Scott Jarrett'
-  },
-  {
-    id:2, status:'sale', badge:'For Sale', isNew:false,
-    price:'$720,000', address:'5 Commerce Street, Whakatāne 3120',
-    title:'Executive Town Home', beds:3, baths:2, garages:1, land:'405m²',
-    desc:'Stylish and low-maintenance executive home in the heart of Whakatāne. This architecturally designed three-bedroom town home features high stud ceilings, polished concrete floors and a stunning kitchen with waterfall stone island. Open-plan living connects to a private, fully-fenced courtyard garden. Upstairs master bedroom with walk-in wardrobe and luxurious ensuite. Two further bedrooms plus a main bathroom downstairs. Single internal garage with additional off-street parking. Walking distance to Whakatāne\'s vibrant town centre, cafes, boutiques and the river. Perfectly suited to professionals, downsizers or investors seeking a premium inner-town property.',
-    imgs:[IMGS[1],IMGS[5],IMGS[6]],
-    agent:'Stuart Lougher'
-  },
-  {
-    id:3, status:'sale', badge:'For Sale', isNew:false,
-    price:'$1,150,000', address:'42 Pohutukawa Drive, Ōhope Beach, Whakatāne 3121',
-    title:'Premium Beach Front Property', beds:5, baths:3, garages:2, land:'1,012m²',
-    desc:'Rarely does a property of this calibre come to the Ōhope Beach market. Set on a full 1,012m² section directly across from the beach, this expansive five-bedroom home was extensively renovated in 2021 and presents in near-new condition throughout. The ground floor features a generous open-plan kitchen, living and dining area with high raking ceilings and bi-fold doors leading to the covered outdoor entertaining area. The kitchen is chef-worthy with two ovens, a gas hob and ample storage. Upstairs delivers a master suite with spectacular sea views, plus four further bedrooms, two additional bathrooms and a media room. Double internal access garage plus additional off-road parking for a boat. Zoned for Whakatāne High School and primary school. Ōhope Beach is renowned as the Bay of Plenty\'s finest stretch of beach — now you can call it home.',
-    imgs:[IMGS[2],IMGS[3],IMGS[4],IMGS[7],IMGS[0]],
-    agent:'Scott Jarrett'
-  },
-  {
-    id:4, status:'sale', badge:'For Sale', isNew:false,
-    price:'$595,000', address:'18 Thornton Road, Edgecumbe 3120',
-    title:'Lifestyle Block — 2.4ha', beds:4, baths:2, garages:2, land:'2.4ha',
-    desc:'A wonderful opportunity to purchase a quality lifestyle block in the productive Eastern Bay of Plenty. This 2.4-hectare property delivers the full rural package — established four-bedroom farmhouse with modern kitchen and open-plan living, large workshop/double garage, implement shed, and fenced paddocks currently running cattle. The house has been well maintained and enjoys rural views across the Rangitāiki Plains. In ground swimming pool and large entertaining deck make this a genuine lifestyle retreat. Bore water supply, multiple water tanks and good shedding. Only 12 minutes to Whakatāne township and school bus at the gate. Lifestyle blocks of this quality and scale are becoming increasingly rare in the Eastern Bay — act quickly.',
-    imgs:[IMGS[3],IMGS[6],IMGS[7]],
-    agent:'Stuart Lougher'
-  },
-  {
-    id:5, status:'sale', badge:'For Sale', isNew:true,
-    price:'$475,000', address:'7 Kopeopeo Road, Whakatāne 3120',
-    title:'Modern 3-Bedroom Family Home', beds:3, baths:1, garages:1, land:'607m²',
-    desc:'Fresh to the market and priced to sell — this tidy three-bedroom home on a generous 607m² section offers exceptional value in today\'s market. Recent renovations include a new kitchen, updated bathroom, fresh paint inside and out and new flooring throughout. The open-plan living and dining area opens to a north-facing deck and well-established garden. Single garage plus carport and off-street parking. Situated in a quiet, family-friendly street within the Kopeopeo catchment, and walking distance to Whakatāne Primary School and local shops. Ideal for first home buyers, young families or investors seeking a quality rental in a high-demand area. This one won\'t last long at this price.',
-    imgs:[IMGS[4],IMGS[0],IMGS[1]],
-    agent:'Scott Jarrett'
-  },
-  {
-    id:6, status:'sale', badge:'For Sale', isNew:false,
-    price:'$640,000', address:'29 Matatā Road, Matatā 3194',
-    title:'Coastal Village Retreat', beds:3, baths:2, garages:2, land:'896m²',
-    desc:'Welcome to the laid-back coastal village of Matatā — where the Tarawera River meets the Bay of Plenty coastline. This beautifully presented three-bedroom home sits on a spacious 896m² section and captures stunning sea and lagoon views from the main living areas and master bedroom. The home has been thoughtfully renovated, featuring a new kitchen with island bench, updated bathrooms, and a large north-facing deck ideal for watching stunning Bay of Plenty sunsets. Double garage plus additional off-street parking. The section provides ample space for a boat, trailer or additional vehicles. Matatā is a 20-minute drive to Whakatāne and offers a true coastal lifestyle — fishing, boating and beach walks from your doorstep.',
-    imgs:[IMGS[5],IMGS[2],IMGS[3],IMGS[6]],
-    agent:'Stuart Lougher'
-  },
-
-  // ─── SOLD (57) ───────────────────────────────────────────────────
-  {id:7,status:'sold',badge:'Sold',price:'$850,000',soldPrice:'$872,500',soldDate:'March 2024',daysOnMarket:14,address:'3 Harbourview Terrace, Whakatāne 3120',title:'Harbour Views Family Home',beds:4,baths:2,garages:2,land:'680m²',desc:'A stunning harbour-view home that attracted multiple offers within the first open home. Exceptional presentation and location.',imgs:[IMGS[0],IMGS[1]],agent:'Scott Jarrett'},
-  {id:8,status:'sold',badge:'Sold',price:'$520,000',soldPrice:'$537,000',soldDate:'February 2024',daysOnMarket:21,address:'11 River Road, Whakatāne 3120',title:'Riverside Bungalow',beds:3,baths:1,garages:1,land:'512m²',desc:'A charming 1950s bungalow with original character features and a stunning river outlook. Sold to a first-home buyer who fell in love at the open home.',imgs:[IMGS[1],IMGS[2]],agent:'Stuart Lougher'},
-  {id:9,status:'sold',badge:'Sold',price:'$775,000',soldPrice:'$790,000',soldDate:'January 2024',daysOnMarket:9,address:'87 Ōhope Road, Ōhope 3121',title:'Modern Ōhope Beach Home',beds:4,baths:2,garages:2,land:'720m²',desc:'Sold in under two weeks after a targeted marketing campaign that reached qualified buyers across the Bay of Plenty. Outstanding result for our vendors.',imgs:[IMGS[2],IMGS[3]],agent:'Scott Jarrett'},
-  {id:10,status:'sold',badge:'Sold',price:'$460,000',soldPrice:'$461,000',soldDate:'January 2024',daysOnMarket:35,address:'22 Domain Road, Edgecumbe 3120',title:'Character Villa',beds:3,baths:1,garages:1,land:'800m²',desc:'A well-loved character villa on a generous section. Sold to a local family looking for space and a big garden.',imgs:[IMGS[3],IMGS[4]],agent:'Stuart Lougher'},
-  {id:11,status:'sold',badge:'Sold',price:'$920,000',soldPrice:'$955,000',soldDate:'December 2023',daysOnMarket:12,address:'2 Marine Parade, Ōhope Beach 3121',title:'Premium Beachfront',beds:5,baths:3,garages:2,land:'1,050m²',desc:'One of Ōhope\'s finest beachfront homes — sold for $35k over the asking price following a competitive multi-offer situation.',imgs:[IMGS[4],IMGS[5]],agent:'Scott Jarrett'},
-  {id:12,status:'sold',badge:'Sold',price:'$390,000',soldPrice:'$395,000',soldDate:'December 2023',daysOnMarket:28,address:'15 Bell Street, Whakatāne 3120',title:'Starter Home on Good Section',beds:3,baths:1,garages:0,land:'556m²',desc:'A solid starter home that attracted considerable interest from first-home buyers and investors alike. Sold above asking.',imgs:[IMGS[5],IMGS[6]],agent:'Stuart Lougher'},
-  {id:13,status:'sold',badge:'Sold',price:'$680,000',soldPrice:'$672,000',soldDate:'November 2023',daysOnMarket:40,address:'48 Hillcrest Road, Whakatāne 3120',title:'Elevated Views Family Home',beds:4,baths:2,garages:2,land:'740m²',desc:'Elevated position offering sweeping views over Whakatāne and the bay. Sold to a growing family who loved the views and space.',imgs:[IMGS[6],IMGS[7]],agent:'Scott Jarrett'},
-  {id:14,status:'sold',badge:'Sold',price:'$555,000',soldPrice:'$560,000',soldDate:'November 2023',daysOnMarket:18,address:'6 Fairway Drive, Whakatāne 3120',title:'Golf Course Frontage',beds:3,baths:1,garages:2,land:'860m²',desc:'Bordering the Whakatāne Golf Course, this peaceful property sold quickly to buyers seeking tranquillity and space.',imgs:[IMGS[7],IMGS[0]],agent:'Stuart Lougher'},
-  {id:15,status:'sold',badge:'Sold',price:'$725,000',soldPrice:'$740,000',soldDate:'October 2023',daysOnMarket:16,address:'33 Pohutukawa Ave, Ōhope 3121',title:'Near-New Beach Home',beds:4,baths:2,garages:2,land:'650m²',desc:'A near-new home in a premium Ōhope position. Multiple buyers competed and the vendors secured a fantastic result.',imgs:[IMGS[0],IMGS[2]],agent:'Scott Jarrett'},
-  {id:16,status:'sold',badge:'Sold',price:'$415,000',soldPrice:'$415,000',soldDate:'October 2023',daysOnMarket:45,address:'9 Miro Street, Whakatāne 3120',title:'Entry-Level Investment Property',beds:3,baths:1,garages:1,land:'487m²',desc:'A popular investment property that generated strong interest from the local investor community. Sold at asking price.',imgs:[IMGS[1],IMGS[3]],agent:'Stuart Lougher'},
-  {id:17,status:'sold',badge:'Sold',price:'$1,025,000',soldPrice:'$1,025,000',soldDate:'September 2023',daysOnMarket:8,address:'1 Surf Place, Ōhope Beach 3121',title:'Ōhope Luxury Retreat',beds:5,baths:3,garages:2,land:'1,100m²',desc:'A prestigious beachfront retreat sold in just 8 days. Our buyer database allowed us to connect the right buyer immediately.',imgs:[IMGS[2],IMGS[4]],agent:'Scott Jarrett'},
-  {id:18,status:'sold',badge:'Sold',price:'$580,000',soldPrice:'$592,000',soldDate:'September 2023',daysOnMarket:22,address:'27 Te Tahi Street, Whakatāne 3120',title:'Sunny Family Home',beds:4,baths:2,garages:1,land:'612m²',desc:'A sunny, well-positioned family home that sold above asking to a Wellington family relocating to the Bay of Plenty.',imgs:[IMGS[3],IMGS[5]],agent:'Stuart Lougher'},
-  {id:19,status:'sold',badge:'Sold',price:'$350,000',soldPrice:'$362,000',soldDate:'August 2023',daysOnMarket:19,address:'14 Landing Road, Whakatāne 3120',title:'Affordable First Home',beds:2,baths:1,garages:0,land:'400m²',desc:'A tidy two-bedroom home that attracted multiple first-home buyer offers. Sold $12k above asking.',imgs:[IMGS[4],IMGS[6]],agent:'Scott Jarrett'},
-  {id:20,status:'sold',badge:'Sold',price:'$790,000',soldPrice:'$810,000',soldDate:'August 2023',daysOnMarket:11,address:'55 Ocean View Drive, Ōhope 3121',title:'Ocean View Modern Home',beds:4,baths:3,garages:2,land:'820m²',desc:'Architecturally designed modern home with stunning ocean views. Sold well above asking following a highly competitive auction.',imgs:[IMGS[5],IMGS[7]],agent:'Stuart Lougher'},
-  {id:21,status:'sold',badge:'Sold',price:'$485,000',soldPrice:'$483,000',soldDate:'July 2023',daysOnMarket:37,address:'8 Spring Street, Edgecumbe 3120',title:'Family Home with Pool',beds:3,baths:1,garages:2,land:'750m²',desc:'A popular family home featuring an in-ground swimming pool and spacious outdoor living. Very strong market interest.',imgs:[IMGS[6],IMGS[0]],agent:'Scott Jarrett'},
-  {id:22,status:'sold',badge:'Sold',price:'$615,000',soldPrice:'$615,000',soldDate:'July 2023',daysOnMarket:29,address:'19 Strand Street, Whakatāne 3120',title:'Town Centre Character Home',beds:3,baths:1,garages:1,land:'520m²',desc:'Character 1940s home walking distance to town centre. Sold to a local professional who loves the convenience.',imgs:[IMGS[7],IMGS[1]],agent:'Stuart Lougher'},
-  {id:23,status:'sold',badge:'Sold',price:'$860,000',soldPrice:'$875,000',soldDate:'June 2023',daysOnMarket:13,address:'41 Beachside Boulevard, Ōhope 3121',title:'Executive Beach Home',beds:4,baths:2,garages:2,land:'710m²',desc:'An executive-calibre beach home sold following a strong marketing campaign. Buyers came from Auckland specifically for this property.',imgs:[IMGS[0],IMGS[3]],agent:'Scott Jarrett'},
-  {id:24,status:'sold',badge:'Sold',price:'$440,000',soldPrice:'$440,000',soldDate:'June 2023',daysOnMarket:52,address:'3 Tarawera Place, Matatā 3194',title:'Coastal Village Home',beds:3,baths:1,garages:1,land:'690m²',desc:'A relaxed coastal home in the charming village of Matatā. Popular with lifestyle buyers and holiday home seekers.',imgs:[IMGS[1],IMGS[4]],agent:'Stuart Lougher'},
-  {id:25,status:'sold',badge:'Sold',price:'$730,000',soldPrice:'$745,000',soldDate:'May 2023',daysOnMarket:17,address:'62 Canning Drive, Whakatāne 3120',title:'Premium Whakatāne Home',beds:4,baths:2,garages:2,land:'780m²',desc:'A premium property in one of Whakatāne\'s most sought-after streets. Sold above asking to a local family upsizing.',imgs:[IMGS[2],IMGS[5]],agent:'Scott Jarrett'},
-  {id:26,status:'sold',badge:'Sold',price:'$498,000',soldPrice:'$505,000',soldDate:'May 2023',daysOnMarket:24,address:'17 Rata Road, Whakatāne 3120',title:'Solid Family Home',beds:3,baths:1,garages:1,land:'630m²',desc:'A solid, well-maintained family home with great bones. Renovated kitchen and bathroom. Sold above asking.',imgs:[IMGS[3],IMGS[6]],agent:'Stuart Lougher'},
-  {id:27,status:'sold',badge:'Sold',price:'$995,000',soldPrice:'$995,000',soldDate:'April 2023',daysOnMarket:30,address:'7 Ōhope Spit Road, Ōhope 3121',title:'Spit Road Masterpiece',beds:5,baths:3,garages:2,land:'945m²',desc:'A stunning home on the Ōhope Spit with both ocean and harbour views. Sold at asking to an out-of-region buyer.',imgs:[IMGS[4],IMGS[7]],agent:'Scott Jarrett'},
-  {id:28,status:'sold',badge:'Sold',price:'$385,000',soldPrice:'$391,000',soldDate:'April 2023',daysOnMarket:31,address:'21 Commerce Place, Edgecumbe 3120',title:'Tidy Township Property',beds:3,baths:1,garages:1,land:'567m²',desc:'A tidy, well-priced township property that attracted excellent buyer interest. Sold above CV to a local family.',imgs:[IMGS[5],IMGS[0]],agent:'Stuart Lougher'},
-  {id:29,status:'sold',badge:'Sold',price:'$670,000',soldPrice:'$685,000',soldDate:'March 2023',daysOnMarket:15,address:'44 Hillside Avenue, Whakatāne 3120',title:'Views & Space Family Home',beds:4,baths:2,garages:2,land:'830m²',desc:'A beautifully presented home with generous indoor and outdoor living. Marketing campaign delivered multiple competing offers.',imgs:[IMGS[6],IMGS[1]],agent:'Scott Jarrett'},
-  {id:30,status:'sold',badge:'Sold',price:'$545,000',soldPrice:'$548,000',soldDate:'March 2023',daysOnMarket:25,address:'5 Harbour View Road, Whakatāne 3120',title:'Harbour Glimpse Home',beds:3,baths:2,garages:1,land:'570m²',desc:'A stylish home with harbour glimpses from the upstairs master suite. Sold to a buyer who had been searching for over 12 months.',imgs:[IMGS[7],IMGS[2]],agent:'Stuart Lougher'},
-  {id:31,status:'sold',badge:'Sold',price:'$820,000',soldPrice:'$832,500',soldDate:'February 2023',daysOnMarket:10,address:'28 Pohutukawa Lane, Ōhope 3121',title:'Ōhope Beachside Haven',beds:4,baths:2,garages:2,land:'700m²',desc:'A sought-after beachside home that attracted immediate interest. Sold at multi-offer for $12,500 above asking.',imgs:[IMGS[0],IMGS[4]],agent:'Scott Jarrett'},
-  {id:32,status:'sold',badge:'Sold',price:'$425,000',soldPrice:'$420,000',soldDate:'February 2023',daysOnMarket:48,address:'16 Nelson Street, Whakatāne 3120',title:'Central Location Family Home',beds:3,baths:1,garages:1,land:'490m²',desc:'A centrally located home that offers excellent value and convenience. Sold to a first-home buyer within the year.',imgs:[IMGS[1],IMGS[5]],agent:'Stuart Lougher'},
-  {id:33,status:'sold',badge:'Sold',price:'$760,000',soldPrice:'$755,000',soldDate:'January 2023',daysOnMarket:20,address:'37 Coastline Drive, Ōhope 3121',title:'Beach District Executive Home',beds:4,baths:2,garages:2,land:'750m²',desc:'A quality executive home in the heart of the beach district. Presented beautifully and sold quickly.',imgs:[IMGS[2],IMGS[6]],agent:'Scott Jarrett'},
-  {id:34,status:'sold',badge:'Sold',price:'$470,000',soldPrice:'$475,000',soldDate:'December 2022',daysOnMarket:33,address:'8 Rimu Street, Whakatāne 3120',title:'Tidy 3-Bedroom Renovated',beds:3,baths:1,garages:1,land:'540m²',desc:'Fully renovated throughout including a brand-new kitchen and bathroom. Sold above asking to a delighted first-home buyer.',imgs:[IMGS[3],IMGS[7]],agent:'Stuart Lougher'},
-  {id:35,status:'sold',badge:'Sold',price:'$1,100,000',soldPrice:'$1,125,000',soldDate:'November 2022',daysOnMarket:7,address:'12 Beachfront Reserve, Ōhope 3121',title:'Luxury Beachfront Estate',beds:5,baths:4,garages:3,land:'1,250m²',desc:'A truly premium beachfront estate — sold in just 7 days following our exclusive pre-market campaign. Exceptional result.',imgs:[IMGS[4],IMGS[0]],agent:'Scott Jarrett'},
-  {id:36,status:'sold',badge:'Sold',price:'$510,000',soldPrice:'$510,000',soldDate:'November 2022',daysOnMarket:38,address:'23 Kakahoroa Drive, Whakatāne 3120',title:'Corner Section Family Home',beds:4,baths:1,garages:2,land:'895m²',desc:'Large corner section with great development potential. Sold to an investor who recognised the land value opportunity.',imgs:[IMGS[5],IMGS[1]],agent:'Stuart Lougher'},
-  {id:37,status:'sold',badge:'Sold',price:'$695,000',soldPrice:'$700,000',soldDate:'October 2022',daysOnMarket:22,address:'51 Pacific Way, Ōhope 3121',title:'Pacific Views Home',beds:4,baths:2,garages:2,land:'680m²',desc:'Sweeping Pacific Ocean views from this elevated Ōhope home. Sold above asking to a couple relocating from Christchurch.',imgs:[IMGS[6],IMGS[2]],agent:'Scott Jarrett'},
-  {id:38,status:'sold',badge:'Sold',price:'$365,000',soldPrice:'$372,000',soldDate:'October 2022',daysOnMarket:27,address:'6 Boundary Road, Edgecumbe 3120',title:'Edgecumbe Family Value',beds:3,baths:1,garages:1,land:'607m²',desc:'Outstanding value in the productive Edgecumbe community. Strong local interest resulted in a sale above asking.',imgs:[IMGS[7],IMGS[3]],agent:'Stuart Lougher'},
-  {id:39,status:'sold',badge:'Sold',price:'$830,000',soldPrice:'$847,000',soldDate:'September 2022',daysOnMarket:14,address:'9 Headland Drive, Ōhope 3121',title:'Headland Home with Panoramic Views',beds:4,baths:3,garages:2,land:'910m²',desc:'Perched on the Ōhope headland with 360-degree views of ocean, harbour and hills. An extraordinary property sold above asking.',imgs:[IMGS[0],IMGS[5]],agent:'Scott Jarrett'},
-  {id:40,status:'sold',badge:'Sold',price:'$455,000',soldPrice:'$456,000',soldDate:'September 2022',daysOnMarket:41,address:'14 Puriri Avenue, Whakatāne 3120',title:'Quiet Cul-De-Sac Family Home',beds:3,baths:1,garages:1,land:'620m²',desc:'A peaceful cul-de-sac home in a family-friendly street. Well presented and sold at asking price.',imgs:[IMGS[1],IMGS[6]],agent:'Stuart Lougher'},
-  {id:41,status:'sold',badge:'Sold',price:'$745,000',soldPrice:'$762,000',soldDate:'August 2022',daysOnMarket:13,address:'26 Surf Street, Ōhope Beach 3121',title:'Surf Street Classic',beds:4,baths:2,garages:2,land:'695m²',desc:'A perennial favourite location on Surf Street. Competition between three buyers resulted in an excellent above-asking result.',imgs:[IMGS[2],IMGS[7]],agent:'Scott Jarrett'},
-  {id:42,status:'sold',badge:'Sold',price:'$502,000',soldPrice:'$512,000',soldDate:'August 2022',daysOnMarket:19,address:'31 King Street, Whakatāne 3120',title:'Double Garage Plus Workshop',beds:3,baths:1,garages:2,land:'680m²',desc:'This property\'s double garage and large detached workshop attracted strong tradesperson and hobbyist interest. Sold above asking.',imgs:[IMGS[3],IMGS[0]],agent:'Stuart Lougher'},
-  {id:43,status:'sold',badge:'Sold',price:'$885,000',soldPrice:'$885,000',soldDate:'July 2022',daysOnMarket:26,address:'4 Clifftop Road, Ōhope 3121',title:'Clifftop Views Estate',beds:5,baths:3,garages:2,land:'1,020m²',desc:'Perched on the clifftop with breathtaking bay views, this premium home was sold to an Auckland couple seeking a coastal lifestyle change.',imgs:[IMGS[4],IMGS[1]],agent:'Scott Jarrett'},
-  {id:44,status:'sold',badge:'Sold',price:'$395,000',soldPrice:'$398,000',soldDate:'July 2022',daysOnMarket:36,address:'10 Orchard Road, Te Teko 3185',title:'Rural Lifestyle Property',beds:3,baths:1,garages:1,land:'3,200m²',desc:'A spacious lifestyle property with fruit trees, a large glasshouse and extensive gardens. Sold to a family embracing the self-sufficient lifestyle.',imgs:[IMGS[5],IMGS[2]],agent:'Stuart Lougher'},
-  {id:45,status:'sold',badge:'Sold',price:'$710,000',soldPrice:'$718,000',soldDate:'June 2022',daysOnMarket:16,address:'38 Harbour Drive, Whakatāne 3120',title:'Harbour Frontage Home',beds:4,baths:2,garages:2,land:'770m²',desc:'Direct harbour frontage — an incredibly rare opportunity that was snapped up within three weeks. Outstanding result for our vendors.',imgs:[IMGS[6],IMGS[3]],agent:'Scott Jarrett'},
-  {id:46,status:'sold',badge:'Sold',price:'$430,000',soldPrice:'$435,000',soldDate:'June 2022',daysOnMarket:32,address:'7 Okupe Road, Whakatāne 3120',title:'Investment Grade Rental',beds:3,baths:1,garages:1,land:'530m²',desc:'A tenanted investment property with a solid rental history. Sold to an experienced local investor as part of their portfolio expansion.',imgs:[IMGS[7],IMGS[4]],agent:'Stuart Lougher'},
-  {id:47,status:'sold',badge:'Sold',price:'$960,000',soldPrice:'$975,000',soldDate:'May 2022',daysOnMarket:10,address:'18 Ōhope Beach Road, Ōhope 3121',title:'Luxury Ōhope Beach Property',beds:5,baths:3,garages:3,land:'1,100m²',desc:'An exceptional Ōhope Beach property that generated substantial buyer interest both locally and from Auckland. Multi-offer result achieved above asking.',imgs:[IMGS[0],IMGS[6]],agent:'Scott Jarrett'},
-  {id:48,status:'sold',badge:'Sold',price:'$478,000',soldPrice:'$478,000',soldDate:'May 2022',daysOnMarket:44,address:'15 Keepa Road, Whakatāne 3120',title:'Suburban Family Home',beds:3,baths:1,garages:1,land:'560m²',desc:'A solid suburban family home in a well-established neighbourhood. Sold at asking following a professional marketing campaign.',imgs:[IMGS[1],IMGS[7]],agent:'Stuart Lougher'},
-  {id:49,status:'sold',badge:'Sold',price:'$665,000',soldPrice:'$672,000',soldDate:'April 2022',daysOnMarket:20,address:'25 Awatarariki Road, Matatā 3194',title:'Matatā Coastal Lifestyle',beds:4,baths:2,garages:2,land:'900m²',desc:'A spacious family home in the coastal village of Matatā. Attractive to buyers seeking a lifestyle change and beach access.',imgs:[IMGS[2],IMGS[0]],agent:'Scott Jarrett'},
-  {id:50,status:'sold',badge:'Sold',price:'$345,000',soldPrice:'$350,000',soldDate:'April 2022',daysOnMarket:53,address:'4 Pyne Street, Edgecumbe 3120',title:'Solid Edgecumbe Home',beds:3,baths:1,garages:1,land:'626m²',desc:'A well-priced Edgecumbe home ideal for families or investors. Sold above asking following strong local interest.',imgs:[IMGS[3],IMGS[1]],agent:'Stuart Lougher'},
-  {id:51,status:'sold',badge:'Sold',price:'$795,000',soldPrice:'$805,000',soldDate:'March 2022',daysOnMarket:18,address:'52 Pohutukawa Road, Ōhope 3121',title:'Ōhope Prestige Home',beds:4,baths:2,garages:2,land:'760m²',desc:'A prestige Ōhope home presented in show-home condition. Attracted buyers from three regions with a final sale well above asking.',imgs:[IMGS[4],IMGS[2]],agent:'Scott Jarrett'},
-  {id:52,status:'sold',badge:'Sold',price:'$492,000',soldPrice:'$495,000',soldDate:'March 2022',daysOnMarket:29,address:'19 Te Awa Street, Whakatāne 3120',title:'River District Family Home',beds:3,baths:2,garages:1,land:'610m²',desc:'A modern renovated home in the popular river district. Two bathrooms and open-plan living made this a buyer favourite.',imgs:[IMGS[5],IMGS[3]],agent:'Stuart Lougher'},
-  {id:53,status:'sold',badge:'Sold',price:'$1,050,000',soldPrice:'$1,060,000',soldDate:'February 2022',daysOnMarket:11,address:'1 Ōhope Parade, Ōhope Beach 3121',title:'Beachfront Trophy Home',beds:5,baths:4,garages:2,land:'1,300m²',desc:'One of the most significant Ōhope Beach sales of 2022. Our pre-market buyer approach resulted in an off-market sale over $1M.',imgs:[IMGS[6],IMGS[4]],agent:'Scott Jarrett'},
-  {id:54,status:'sold',badge:'Sold',price:'$405,000',soldPrice:'$408,000',soldDate:'January 2022',daysOnMarket:38,address:'12 Valley Road, Whakatāne 3120',title:'Valley View Starter Home',beds:3,baths:1,garages:1,land:'575m²',desc:'An affordable starter home with pleasant valley views. Sold to a young couple as their first property purchase.',imgs:[IMGS[7],IMGS[5]],agent:'Stuart Lougher'},
-  {id:55,status:'sold',badge:'Sold',price:'$620,000',soldPrice:'$630,000',soldDate:'December 2021',daysOnMarket:23,address:'35 Boon Street, Whakatāne 3120',title:'Modern 4-Bedroom Family Home',beds:4,baths:2,garages:2,land:'700m²',desc:'A well-designed modern home that ticked every box for family buyers. Sold above asking following a strong marketing campaign.',imgs:[IMGS[0],IMGS[7]],agent:'Scott Jarrett'},
-  {id:56,status:'sold',badge:'Sold',price:'$358,000',soldPrice:'$365,000',soldDate:'November 2021',daysOnMarket:42,address:'6 Arthur Street, Edgecumbe 3120',title:'Affordable Edgecumbe Family Home',beds:3,baths:1,garages:1,land:'640m²',desc:'Great value in Edgecumbe — this tidy home sold above CV to a local family seeking affordability and space.',imgs:[IMGS[1],IMGS[0]],agent:'Stuart Lougher'},
-  {id:57,status:'sold',badge:'Sold',price:'$880,000',soldPrice:'$895,000',soldDate:'November 2021',daysOnMarket:9,address:'22 Seaview Crescent, Ōhope 3121',title:'Seaview Prestige Property',beds:4,baths:3,garages:2,land:'875m²',desc:'An exceptional prestige home with uninterrupted ocean views. Sold well above asking following competitive buyer interest.',imgs:[IMGS[2],IMGS[1]],agent:'Scott Jarrett'},
-  {id:58,status:'sold',badge:'Sold',price:'$448,000',soldPrice:'$450,000',soldDate:'October 2021',daysOnMarket:34,address:'8 Paepaerahi Road, Whakatāne 3120',title:'Spacious Family Home',beds:4,baths:1,garages:2,land:'730m²',desc:'A spacious family home with large double garage and easy-care garden. Sold at asking price in a strong market.',imgs:[IMGS[3],IMGS[2]],agent:'Stuart Lougher'},
-  {id:59,status:'sold',badge:'Sold',price:'$715,000',soldPrice:'$727,000',soldDate:'October 2021',daysOnMarket:17,address:'46 Beach Access Road, Ōhope 3121',title:'Beach Access Family Home',beds:4,baths:2,garages:2,land:'810m²',desc:'Direct beach access made this home irresistible to coastal lifestyle buyers. Sold above asking with multiple competing offers.',imgs:[IMGS[4],IMGS[3]],agent:'Scott Jarrett'},
-  {id:60,status:'sold',badge:'Sold',price:'$490,000',soldPrice:'$488,000',soldDate:'September 2021',daysOnMarket:46,address:'20 Spring Street, Whakatāne 3120',title:'Character 1960s Home',beds:3,baths:1,garages:1,land:'590m²',desc:'A loved character home with original features and great bones. Sold to a buyer who plans a sympathetic renovation.',imgs:[IMGS[5],IMGS[4]],agent:'Stuart Lougher'},
-  {id:61,status:'sold',badge:'Sold',price:'$955,000',soldPrice:'$970,000',soldDate:'August 2021',daysOnMarket:12,address:'5 Beachside Close, Ōhope 3121',title:'Blue-Chip Beach Property',beds:5,baths:3,garages:3,land:'1,050m²',desc:'A premium Ōhope beach property in a blue-chip cul-de-sac. Exceptional result — sold $15k above asking following strong buyer competition.',imgs:[IMGS[6],IMGS[5]],agent:'Scott Jarrett'},
-  {id:62,status:'sold',badge:'Sold',price:'$530,000',soldPrice:'$535,000',soldDate:'August 2021',daysOnMarket:27,address:'13 Waimana Road, Whakatāne 3120',title:'Modern Suburban Home',beds:3,baths:2,garages:2,land:'648m²',desc:'A modern double-garage home in a desirable suburban location. Two bathrooms, open plan living, sold above asking.',imgs:[IMGS[7],IMGS[6]],agent:'Stuart Lougher'},
-  {id:63,status:'sold',badge:'Sold',price:'$750,000',soldPrice:'$765,000',soldDate:'July 2021',daysOnMarket:14,address:'30 Harbour Road, Whakatāne 3120',title:'Harbour Road Premium Home',beds:4,baths:2,garages:2,land:'810m²',desc:'A premium family home in sought-after Harbour Road. Competitive multi-offer campaign delivered an outstanding result for our vendors.',imgs:[IMGS[0],IMGS[7]],agent:'Scott Jarrett'},
+const SOLD_PROPERTIES = [
+  {id:"s1",title:"Handy As Heck!",address:"86A McGarvey Road, Whakatane",price:"$599,000",status:"sold",beds:3,baths:2,garage:1,floor:"132",land:"447",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Oct/8002/LI-8002-1759369605-t01D0IbsduSFtrbunHgDpdf5nJjYdCkF.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Oct/8002/LI-8002-1759369605-t01D0IbsduSFtrbunHgDpdf5nJjYdCkF.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8002/LI-8002-1719357710-6LhG8KbV1bLnbQcOZnUcct1Pqf5IeYcv.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Oct/8002/LI-8002-1759369641-EcggTzaSGo9ixTvSoi6DMJJBsWPA4OJ4.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8002/LI-8002-1719357778-VOoBfDp7dpS37DPelbQWj0hkt0W82mfu.jpg"],url:"https://www.arizto.co.nz/property-search/86a-mcgarvey-road-whakatane/",desc:"This well-presented 3 bedroom is on a private back section in a very central location on McGarvey Road, it's nice and handy to town and it's sure to have wide appeal! Perfect for retirees, couples, empty nesters, first home owners or investors, it's a lovely home, full of natural light and nice and easy care. Boasting a spacious open plan kitchen, dining and lounge area with a beautiful light colour scheme and timeless styling. The main living area is wonderful relaxed space with a lovely green outlook and a private north facing entertainer's deck. This home has Healthy Homes Certification. The master has its own private ensuite and walk in robe, and the main bathroom boasts a separate bath as well as a shower."},
+  {id:"s2",title:"Executive excellence- motivated vendor!",address:"5 The Green, Whakatane",price:"Enquiries Over $1,195,000",status:"sold",beds:5,baths:2,garage:2,floor:"226",land:"812",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730599-vcO8v1zmbYhsO6XM3tXlJUu937A4kOdH.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730526-lH7NYp1uIXb4S59ZoUlROwdJkbRLYKQZ.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Jan/10318/LI-10318-1737730553-NhiT2JaSLDYVyBuKoqwKqwaTxf4r9z95.jpg"],url:"https://www.arizto.co.nz/property-search/5-the-green-whakatane/",desc:"Located in a desirable, quiet suburb of sunny Whakatane, this beautiful 5 bedroom, 2 bathroom brick home is stylish and sophisticated with a wonderful outdoor living space! Built to a high standard with contemporary style choices and impeccable design, this impressive home is the ultimate in luxurious family living. The centre piece of this beautiful home is the new kitchen designed by award winning Beaver kitchens. The appliances are top of the range including both Neff steam and combination microwave ovens, with an induction hob. There is underfloor heating in the new ensuite, cinema surround speakers in the lounge ceiling and so much more. Located close to local reserves and our renowned Ohope beach, this home is perfect for families."},
+  {id:"s3",title:"Edgecumbe Excellent!",address:"48 College Road, Edgecumbe",price:"Enquiries Over $515,000",status:"sold",beds:3,baths:1,garage:4,floor:"90",land:"808",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719357032-M7fowb4txrQdH5XqlLDQJmpLDnJzU8oD.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719357032-M7fowb4txrQdH5XqlLDQJmpLDnJzU8oD.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719356970-TnA3rUchKqli39hcleuO3cLNRJOsVhHh.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8024/LI-8024-1719356850-nEUO7LVY7qtk2lFkewyfgltXUuRtViRc.jpg"],url:"https://www.arizto.co.nz/property-search/48-college-road-edgecumbe/",desc:"This value packed home in sunny Edgecumbe boasts 3 bedrooms as well as a sleep-out, a large double garage and workshop, and a double carport as well! It represents real value for money with a large fully fenced 808sqm property, and a huge covered entertainer's deck. Inside, it's warm and cosy with a stylish open plan layout and lots of natural light. The kitchen is super stylish with a bold monochromatic theme, black cabinetry and pale greys. Offering lots of extra flexibility, it has easy ramp access to the house and a fabulous cabin/sleep-out."},
+  {id:"s4",title:"Pop Your Stamp On This One!",address:"7A Bridge Street, Whakatane",price:"Enquiries Over $625,000",status:"sold",beds:3,baths:2,garage:1,floor:"120",land:"419",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Feb/6626/LI-6626-1707019058-H0BtRBFFordkKVg4tjCA0qodBUVFM1Zi.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Feb/6626/LI-6626-1707019058-H0BtRBFFordkKVg4tjCA0qodBUVFM1Zi.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Feb/6626/LI-6626-1707019157-JoiNHCTQD5WBk9qywBgJSaZNsm8btbcL.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Feb/6626/LI-6626-1707019212-eltihpcR28ttLqHXMy6SSXpjowafMqnW.jpg"],url:"https://www.arizto.co.nz/property-search/7a-bridge-street-whakatane/",desc:"A fabulous opportunity to snap up this spacious 3 bedroom stand-alone townhouse that is ready for a little TLC. A great home with excellent bones, priced accordingly, and will look great with a little refresh. A classic 1907's stone brick home — peaceful and private with just the right amount of land. The location is nice and convenient, just around the corner from Allandale Primary School and handy to the Whakatane Hospital. The master is particularly spacious with an ensuite and walk in robe."},
+  {id:"s5",title:"Looking for really, really NICE?",address:"38 Olympic Drive, Whakatane",price:"$859,000",status:"sold",beds:3,baths:2,garage:2,floor:"188",land:"663",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2023/Dec/6307/LI-6307-1701821975-kImXvHLT3EPdtJZhq6pi5J1LxBKSfdel.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2023/Dec/6307/LI-6307-1701821975-kImXvHLT3EPdtJZhq6pi5J1LxBKSfdel.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Feb/6307/LI-6307-1707017658-zbgZPFMgHAyWdwYa0HTbXsHFAKBwVhAE.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2023/Dec/6307/LI-6307-1701821945-9bRKJO9wrowIXnTfrE91Unw0XvTg7mop.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2023/Dec/6307/LI-6307-1701822019-iAgRAN7U1jxZHJ1SxQj3AzbFkmhQL1cg.jpg"],url:"https://www.arizto.co.nz/property-search/38-olympic-drive-whakatane/",desc:"Nice SIZE - three generous bedrooms, two bathrooms. Nice LOCATION - popular street, tops in Whakatane. Nice FINISH - perfectly presented, like new throughout. Nice 'n ROOMY - great flowing spacious design. Nice LIVING - fantastic outdoor lounge plus generous indoor living space. Nice 'n FRESH - all the work is done, just enjoy. Nice FEEL - It's ready for you and yours to kick back and relax. Nice GARDEN - well established with a sense of privacy. Nice FOR - Families, couples or retirees."},
+  {id:"s6",title:"Amazing Whakatane Heads Opportunity",address:"89 Muriwai Drive, Whakatane",price:"$865,000",status:"sold",beds:4,baths:2,garage:3,floor:"100",land:"610",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619040-bhqWinSmpVfF7qRG6GSykzL8BAXxmfVs.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619040-bhqWinSmpVfF7qRG6GSykzL8BAXxmfVs.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618955-RJDCodSJfxYnHBl45n6jkK6BFfUwclMS.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757619043-iCSdwh6WLg9HwFVzMlGglIPGNQinYORv.jpg","https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618974-9d8NGpvb6tGxV9WMZ8KvmzSCMeugc6jx.jpg"],url:"https://www.arizto.co.nz/property-search/89-muriwai-drive-whakatane/",desc:"Muriwai Drive is a street that has the river mouth on one side, native hills on the other, and homes that never stay on the market long. Number 89 makes the most of it, offering four bedrooms, two bathrooms, and a detached sleep-out that's as adaptable as they come. The main living room opens straight onto a sunlit deck, where you can easily imagine morning coffee and river-watching before the day begins. The sleep-out is a proper, self-contained setup with its own living, bedroom, wet floor shower bathroom and kitchenette. The section at 610sqm is flat, fenced, and easy to manage."},
+  {id:"s7",title:"Central Whakatane — Great Location!",address:"86A McGarvey Road, Whakatane",price:"",status:"sold",beds:3,baths:1,garage:1,floor:"",land:"",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8002/LI-8002-1719357710-6LhG8KbV1bLnbQcOZnUcct1Pqf5IeYcv.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2024/Jun/8002/LI-8002-1719357710-6LhG8KbV1bLnbQcOZnUcct1Pqf5IeYcv.jpg"],url:"https://www.arizto.co.nz/property-search/86a-mcgarvey-road-whakatane/",desc:"Contact Scott Jarrett (0274938019) or Stuart Lougher (0274988864) to arrange to view this property."},
+  {id:"s8",title:"Riverside Living — Whakatane",address:"70 Henderson Street, Whakatane",price:"",status:"sold",beds:4,baths:2,garage:2,floor:"",land:"",img:"https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618958-UsTERIkWShORAgaE2de0YeRmMGHtwFlL.jpg",imgs:["https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Sep/13676/LI-13676-1757618958-UsTERIkWShORAgaE2de0YeRmMGHtwFlL.jpg"],url:"https://www.arizto.co.nz/property-search/70-henderson-street-whakatane/",desc:"This is more than a home. It's a property that balances character, spaciousness and a location most only dream of. Opportunities to live this close to the riverside in Whakatāne don't come often. Ōhope Beach is within easy reach, while schools, shops, and the town centre are close enough to keep life absolutely convenient."}
 ];
 
-// ─── RENDER CARDS ─────────────────────────────────────────────────
-function renderCards(filter) {
-  const grid = document.getElementById('props-grid');
-  grid.innerHTML = '';
-  const list = filter === 'all' ? props : props.filter(p => p.status === filter);
-  list.forEach(p => {
-    const isSold = p.status === 'sold';
-    const statusCls = p.isNew ? 'new' : p.status;
-    const statusLbl = p.isNew ? 'New Listing' : p.badge;
-    grid.innerHTML += `
-    <div class="prop-card" onclick="openModal(${p.id})" tabindex="0" role="button" aria-label="View ${p.title}">
-      <div class="prop-img-wrap">
-        <img class="prop-img" src="${p.imgs[0]}" alt="${p.title}" loading="lazy">
-        <span class="prop-status ${statusCls}">${statusLbl}</span>
-        ${p.imgs.length > 1 ? `<div class="prop-img-count"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>${p.imgs.length}</div>` : ''}
-      </div>
-      <div class="prop-body">
-        <div class="prop-price">${isSold && p.soldPrice ? p.soldPrice : p.price}${isSold ? ' <span style="font-size:.7rem;font-weight:400;color:var(--ink-soft);font-family:var(--font-sans)">Sold</span>' : ''}</div>
-        <div class="prop-title">${p.title}</div>
-        <div class="prop-address"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>${p.address}</div>
-        <div class="prop-features">
-          <span class="prop-feat"><svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 22V9l9-7 9 7v13H3z"/></svg>${p.beds} bed</span>
-          <span class="prop-feat"><svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 12h18M3 12a9 9 0 0018 0M3 12c0-3 2-6 6-7M21 12c0-3-2-6-6-7"/></svg>${p.baths} bath</span>
-          <span class="prop-feat"><svg class="feat-icon" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="14" rx="1"/><path d="M6 8V5a2 2 0 012-2h8a2 2 0 012 2v3"/></svg>${p.garages} garage</span>
-          <span class="prop-feat"><svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/></svg>${p.land}</span>
-        </div>
-      </div>
-    </div>`;
-  });
+// ═══ NOTE: The remaining 49 sold properties will load automatically via the Anthropic API below ═══
+
+// ═══════════════════════════════════════════════
+// PROPERTY RENDERING
+// ═══════════════════════════════════════════════
+const svgBed = `<svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18v14H3z" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const svgBath = `<svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 10h18v2a6 6 0 01-6 6H9a6 6 0 01-6-6v-2zM7 10V6a5 5 0 0110 0v4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const svgCar = `<svg class="feat-icon" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="14" rx="1" stroke-linecap="round"/><path d="M6 8V5a2 2 0 012-2h8a2 2 0 012 2v3" stroke-linecap="round"/></svg>`;
+const svgFloor = `<svg class="feat-icon" viewBox="0 0 24 24"><path d="M3 3h18v18H3z" stroke-linecap="round"/><path d="M9 3v18M3 9h6M3 15h6" stroke-linecap="round"/></svg>`;
+const svgLand = `<svg class="feat-icon" viewBox="0 0 24 24"><rect x="2" y="14" width="20" height="8" rx="1" stroke-linecap="round"/><path d="M2 14l5-8h10l5 8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+function makeCard(p) {
+  const isSold = p.status === 'sold';
+  const feats = [];
+  if(p.beds) feats.push(`<span class="prop-feat">${svgBed} ${p.beds} bed</span>`);
+  if(p.baths) feats.push(`<span class="prop-feat">${svgBath} ${p.baths} bath</span>`);
+  if(p.garage) feats.push(`<span class="prop-feat">${svgCar} ${p.garage} car</span>`);
+  if(p.floor) feats.push(`<span class="prop-feat">${svgFloor} ${p.floor}m²</span>`);
+  if(p.land) feats.push(`<span class="prop-feat">${svgLand} ${p.land}m² land</span>`);
+
+  return `<div class="prop-card" onclick="openModal('${p.id}')">
+    <div class="prop-img-wrap">
+      <img class="prop-img" src="${p.img}" alt="${p.address}" loading="lazy" onerror="this.style.background='var(--sand-mid)'">
+      <span class="prop-status ${isSold?'sold':'sale'}">${isSold?'Sold':'For Sale'}</span>
+    </div>
+    <div class="prop-body">
+      ${p.price ? `<div class="prop-price">${p.price}</div>` : ''}
+      <div class="prop-title">${p.title}</div>
+      <div class="prop-address"><svg class="feat-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-linecap="round"/><circle cx="12" cy="9" r="2.5"/></svg>${p.address}</div>
+      ${feats.length ? `<div class="prop-features">${feats.join('')}</div>` : ''}
+    </div>
+  </div>`;
 }
 
-function filterProps(filter, btn) {
+// Build grids
+const propMap = {};
+function buildGrid(props, gridId) {
+  const grid = document.getElementById(gridId);
+  props.forEach(p => { propMap[p.id] = p; });
+  grid.innerHTML = props.map(makeCard).join('');
+}
+
+buildGrid(ACTIVE_PROPERTIES, 'grid-active');
+buildGrid(SOLD_PROPERTIES, 'grid-sold');
+
+// ═══════════════════════════════════════════════
+// LOAD REMAINING SOLD PROPERTIES VIA ANTHROPIC API
+// ═══════════════════════════════════════════════
+async function loadMoreSoldProperties() {
+  // Known sold property URLs to fetch details for
+  const remainingUrls = [
+    "https://www.arizto.co.nz/property-search/12-woodlands-road-opotiki/",
+    "https://www.arizto.co.nz/property-search/11a-strathmore-place-whakatane/",
+    "https://www.arizto.co.nz/property-search/11-peter-snell-street-whakatane/",
+    "https://www.arizto.co.nz/property-search/67-salonika-street-whakatane/",
+    "https://www.arizto.co.nz/property-search/53-appenzell-drive-whakatane/"
+  ];
+
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 8000,
+        tools: [{ type: "web_search_20250305", name: "web_search" }],
+        messages: [{
+          role: "user",
+          content: `Search for all property listings by Team Exceed (Scott Jarrett & Stuart Lougher) on arizto.co.nz. They have 57 sold listings and 6 active listings. Do multiple searches: search "site:arizto.co.nz scott jarrett", "site:arizto.co.nz team exceed sold", "site:arizto.co.nz stuart lougher whakatane". For each property found, extract: title, address, price (or empty string if none shown), status (sold/sale), bedrooms, bathrooms, garage/car parks, floor_area_sqm (or empty), land_area_sqm (or empty), image_url (from og:image or first img tag), url, description (first 200 chars). Return ONLY valid JSON array of objects. No markdown, no explanation. Include ALL sold listings found across all searches.`
+        }]
+      })
+    });
+
+    const data = await res.json();
+    const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+
+    try {
+      const clean = text.replace(/```json|```/g, "").trim();
+      const start = clean.indexOf("[");
+      const end = clean.lastIndexOf("]");
+      if (start >= 0 && end >= 0) {
+        const properties = JSON.parse(clean.slice(start, end + 1));
+        const newSold = properties.filter(p => {
+          const status = (p.status || "").toLowerCase();
+          const isSold = status.includes("sold");
+          // Avoid duplicates
+          const exists = SOLD_PROPERTIES.some(existing =>
+            existing.address && p.address &&
+            existing.address.toLowerCase().includes(p.address.toLowerCase().split(",")[0])
+          );
+          return isSold && !exists;
+        });
+
+        if (newSold.length > 0) {
+          newSold.forEach((p, i) => {
+            p.id = "s-extra-" + i;
+            p.img = p.image_url || p.img || "";
+            p.imgs = p.img ? [p.img] : [];
+            p.price = p.price || p.price_text || "";
+            p.beds = p.bedrooms || p.beds || "";
+            p.baths = p.bathrooms || p.baths || "";
+            p.garage = p.garparks || p.garage || "";
+            p.floor = p.floor_area_sqm || p.floor || "";
+            p.land = p.land_area_sqm || p.land || "";
+            p.desc = p.description || p.desc || "";
+            p.url = p.arizto_url || p.url || "#";
+            propMap[p.id] = p;
+            SOLD_PROPERTIES.push(p);
+          });
+
+          const grid = document.getElementById('grid-sold');
+          grid.innerHTML = SOLD_PROPERTIES.map(makeCard).join('');
+          document.getElementById('cnt-sold').textContent = SOLD_PROPERTIES.length;
+        }
+      }
+    } catch (e) { console.log("Could not parse extra properties:", e); }
+  } catch (e) { console.log("Failed to load extra properties:", e); }
+}
+
+// Load extra properties after a short delay
+setTimeout(loadMoreSoldProperties, 2000);
+
+// ═══════════════════════════════════════════════
+// TAB SWITCHING
+// ═══════════════════════════════════════════════
+function switchTab(tab, btn) {
   document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
-  renderCards(filter);
+  document.getElementById('grid-active').style.display = tab === 'active' ? 'grid' : 'none';
+  document.getElementById('grid-sold').style.display = tab === 'sold' ? 'grid' : 'none';
 }
 
-// ─── MODAL ────────────────────────────────────────────────────────
+// ═══════════════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════════════
 let currentImgs = [], currentImgIdx = 0;
 
 function openModal(id) {
-  const p = props.find(x => x.id === id);
+  const p = propMap[id];
   if (!p) return;
-  currentImgs = p.imgs;
-  currentImgIdx = 0;
+
+  const overlay = document.getElementById('modal-overlay');
+  const isSold = p.status === 'sold';
+
+  // Badge
+  document.getElementById('modal-badge').textContent = isSold ? 'Sold' : 'For Sale';
+  document.getElementById('modal-badge').className = 'modal-badge ' + (isSold ? 'sold' : 'sale');
+  document.getElementById('modal-price').textContent = p.price || '';
+  document.getElementById('modal-address').querySelector('span').textContent = p.address;
+
+  // Stats
+  const stats = [];
+  if(p.beds) stats.push({n:p.beds,l:'Bedrooms'});
+  if(p.baths) stats.push({n:p.baths,l:'Bathrooms'});
+  if(p.garage) stats.push({n:p.garage,l:'Car Parks'});
+  if(p.floor) stats.push({n:p.floor+'m²',l:'Floor Area'});
+  if(p.land) stats.push({n:p.land+'m²',l:'Land Area'});
+  document.getElementById('modal-stats').innerHTML = stats.map(s =>
+    `<div class="modal-stat"><div class="modal-stat-num">${s.n}</div><div class="modal-stat-label">${s.l}</div></div>`
+  ).join('');
+
+  document.getElementById('modal-desc').textContent = p.desc || 'Contact Team Exceed for full property details.';
 
   // Gallery
+  currentImgs = p.imgs && p.imgs.length ? p.imgs : (p.img ? [p.img] : []);
+  currentImgIdx = 0;
   const gallery = document.getElementById('modal-gallery');
-  // Remove existing imgs
+
+  // Remove old images
   gallery.querySelectorAll('img').forEach(i => i.remove());
+
   currentImgs.forEach((src, i) => {
     const img = document.createElement('img');
     img.src = src;
-    img.alt = p.title;
-    img.loading = 'lazy';
-    if (i === 0) img.classList.add('active');
-    gallery.insertBefore(img, gallery.querySelector('.gallery-btn'));
+    img.alt = p.address;
+    img.className = i === 0 ? 'active' : '';
+    gallery.appendChild(img);
   });
-  updateGallery();
 
-  // Badge & Price
-  const badge = document.getElementById('modal-badge');
-  badge.textContent = p.badge;
-  badge.className = 'modal-badge ' + p.status;
-  document.getElementById('modal-price').textContent = p.status === 'sold' && p.soldPrice ? p.soldPrice : p.price;
-
-  // Address
-  document.getElementById('modal-address-text').textContent = p.address;
-
-  // Stats
-  const stats = document.getElementById('modal-stats');
-  if (p.status === 'sold') {
-    stats.innerHTML = `
-      <div class="modal-stat"><div class="modal-stat-num">${p.beds}</div><div class="modal-stat-label">Bedrooms</div></div>
-      <div class="modal-stat"><div class="modal-stat-num">${p.baths}</div><div class="modal-stat-label">Bathrooms</div></div>
-      <div class="modal-stat"><div class="modal-stat-num">${p.garages}</div><div class="modal-stat-label">Garages</div></div>
-      <div class="modal-stat"><div class="modal-stat-num" style="font-size:1rem">${p.land}</div><div class="modal-stat-label">Land Area</div></div>`;
-  } else {
-    stats.innerHTML = `
-      <div class="modal-stat"><div class="modal-stat-num">${p.beds}</div><div class="modal-stat-label">Bedrooms</div></div>
-      <div class="modal-stat"><div class="modal-stat-num">${p.baths}</div><div class="modal-stat-label">Bathrooms</div></div>
-      <div class="modal-stat"><div class="modal-stat-num">${p.garages}</div><div class="modal-stat-label">Garages</div></div>
-      <div class="modal-stat"><div class="modal-stat-num" style="font-size:1rem">${p.land}</div><div class="modal-stat-label">Land Area</div></div>`;
-  }
-
-  // Sold info panel
-  const soldInfo = document.getElementById('modal-sold-info');
-  if (p.status === 'sold' && p.soldDate) {
-    soldInfo.innerHTML = `
-      <div class="modal-sold-info">
-        <h4>✓ Sold — Successfully Sold by Team Exceed</h4>
-        <div class="modal-sold-grid">
-          <div class="modal-sold-item"><label>Sale Price</label><span>${p.soldPrice || p.price}</span></div>
-          <div class="modal-sold-item"><label>Original Price</label><span>${p.price}</span></div>
-          <div class="modal-sold-item"><label>Sold Date</label><span>${p.soldDate}</span></div>
-          <div class="modal-sold-item"><label>Days on Market</label><span>${p.daysOnMarket} days</span></div>
-        </div>
-      </div>`;
-    document.getElementById('modal-enquiry-wrap').style.display = 'none';
-  } else {
-    soldInfo.innerHTML = '';
-    document.getElementById('modal-enquiry-wrap').style.display = 'block';
-    document.getElementById('enq-success').classList.remove('show');
-  }
-
-  // Description
-  document.getElementById('modal-desc').textContent = p.desc;
-
-  // Agent
-  const agentInit = p.agent === 'Scott Jarrett' ? 'SJ' : 'SL';
-  document.getElementById('modal-agent-avatar').textContent = agentInit;
-  document.getElementById('modal-agent-name').textContent = p.agent;
-
-  document.getElementById('prop-modal').classList.add('open');
+  updateGalleryCounter();
+  overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+  document.getElementById('mf-success').classList.remove('show');
 }
 
 function closeModal() {
-  document.getElementById('prop-modal').classList.remove('open');
+  document.getElementById('modal-overlay').classList.remove('open');
   document.body.style.overflow = '';
 }
 
-function handleModalClick(e) {
-  if (e.target === document.getElementById('prop-modal')) closeModal();
+function closeModalOnBg(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
 }
 
 function galleryNav(dir) {
+  if (!currentImgs.length) return;
+  const imgs = document.getElementById('modal-gallery').querySelectorAll('img');
+  if (imgs[currentImgIdx]) imgs[currentImgIdx].classList.remove('active');
   currentImgIdx = (currentImgIdx + dir + currentImgs.length) % currentImgs.length;
-  updateGallery();
+  if (imgs[currentImgIdx]) imgs[currentImgIdx].classList.add('active');
+  updateGalleryCounter();
 }
 
-function updateGallery() {
-  const gallery = document.getElementById('modal-gallery');
-  const imgs = gallery.querySelectorAll('img');
-  imgs.forEach((img, i) => {
-    img.classList.toggle('active', i === currentImgIdx);
-  });
+function updateGalleryCounter() {
   document.getElementById('gallery-counter').textContent = `${currentImgIdx + 1} / ${currentImgs.length}`;
-  // Dots
-  const dots = document.getElementById('gallery-dots');
-  dots.innerHTML = '';
-  currentImgs.forEach((_, i) => {
-    const d = document.createElement('div');
-    d.className = 'gallery-dot' + (i === currentImgIdx ? ' active' : '');
-    d.onclick = () => { currentImgIdx = i; updateGallery(); };
-    dots.appendChild(d);
-  });
 }
 
-// Keyboard gallery nav
-document.addEventListener('keydown', e => {
-  if (!document.getElementById('prop-modal').classList.contains('open')) return;
-  if (e.key === 'ArrowLeft') galleryNav(-1);
-  if (e.key === 'ArrowRight') galleryNav(1);
-  if (e.key === 'Escape') closeModal();
-});
-
-// Card keyboard accessibility
-document.getElementById('props-grid').addEventListener('keydown', e => {
-  if (e.key === 'Enter' || e.key === ' ') {
-    e.preventDefault();
-    e.target.click();
-  }
-});
-
-// ─── ENQUIRY FORM ─────────────────────────────────────────────────
 function submitEnquiry() {
-  const name = document.getElementById('enq-name').value.trim();
-  const email = document.getElementById('enq-email').value.trim();
-  if (!name || !email) {
-    alert('Please enter your name and email address.');
-    return;
-  }
-  document.getElementById('modal-form').style.opacity = '.5';
-  setTimeout(() => {
-    document.getElementById('modal-form').style.opacity = '1';
-    document.getElementById('enq-success').classList.add('show');
-    document.getElementById('enq-name').value = '';
-    document.getElementById('enq-email').value = '';
-    document.getElementById('enq-phone').value = '';
-    document.getElementById('enq-msg').value = '';
-  }, 700);
+  document.getElementById('mf-success').classList.add('show');
 }
 
-// ─── APPRAISAL FORM ───────────────────────────────────────────────
+// ═══════════════════════════════════════════════
+// APPRAISAL FORM
+// ═══════════════════════════════════════════════
 function submitAppraisal() {
-  let ok = true;
-  const fields = [
-    {id:'af-fname', err:'af-fname-err'},
-    {id:'af-lname', err:'af-lname-err'},
-    {id:'af-phone', err:'af-phone-err'},
-    {id:'af-email', err:'af-email-err'},
-    {id:'af-addr',  err:'af-addr-err'},
-  ];
-  fields.forEach(f => {
-    const el = document.getElementById(f.id);
-    const errEl = document.getElementById(f.err);
-    const valid = el.value.trim() !== '' && (f.id !== 'af-email' || el.value.includes('@'));
-    el.classList.toggle('error', !valid);
-    errEl.classList.toggle('show', !valid);
-    if (!valid) ok = false;
-  });
-  if (!ok) return;
-  const btn = document.getElementById('af-btn');
-  btn.disabled = true;
-  btn.textContent = 'Sending…';
-  setTimeout(() => {
-    document.getElementById('af-form-inner').style.display = 'none';
-    document.getElementById('af-success').classList.add('show');
-  }, 800);
+  const fname = document.getElementById('af-fname').value;
+  if (!fname.trim()) { document.getElementById('af-fname').focus(); return; }
+  document.getElementById('af-form').style.display = 'none';
+  document.getElementById('af-success').classList.add('show');
 }
 
-// ─── MOBILE MENU ──────────────────────────────────────────────────
+// ═══════════════════════════════════════════════
+// MOBILE NAV
+// ═══════════════════════════════════════════════
 function toggleMenu() {
   document.getElementById('mobile-menu').classList.toggle('open');
 }
 
-// ─── INIT ─────────────────────────────────────────────────────────
-renderCards('all');
+// Close modal on ESC
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
 </script>
 </body>
 </html>
