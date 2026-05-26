@@ -213,7 +213,7 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
 .whatsapp-btn:hover{transform:scale(1.1)}
 .whatsapp-btn svg{width:28px;height:28px;fill:#fff}
 @media(max-width:1100px){.properties-grid{grid-template-columns:repeat(2,1fr)}.modal-stats{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:5rem 6% 4rem}.services-grid{grid-template-columns:1fr 1fr}.about-section{grid-template-columns:1fr}.about-images{display:none}.services-header{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.team-strip{gap:1.5rem}.appraisal-inner{grid-template-columns:1fr;gap:3rem}.modal-gallery{height:320px}}
+@media(max-width:900px){#about > div:last-child{grid-template-columns:1fr!important;max-width:480px;margin:0 auto;}.hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:5rem 6% 4rem}.services-grid{grid-template-columns:1fr 1fr}.about-section{grid-template-columns:1fr}.about-images{display:none}.services-header{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.team-strip{gap:1.5rem}.appraisal-inner{grid-template-columns:1fr;gap:3rem}.modal-gallery{height:320px}}
 @media(max-width:600px){section{padding:4rem 5%}.properties-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}nav{padding:0 5%}.nav-links{display:none}.hamburger{display:flex}.footer-top{grid-template-columns:1fr}.testimonials-grid{grid-template-columns:1fr}.hero h1{font-size:2.4rem}.team-strip{flex-direction:column;align-items:flex-start;gap:1.25rem}.team-strip-divider{display:none}.footer-bottom{flex-direction:column;text-align:center}.properties-header{flex-direction:column;align-items:flex-start}.af-grid{grid-template-columns:1fr}.af-group.full{grid-column:1}.af-submit{grid-column:1}.modal-body{padding:1.5rem}.modal-form{grid-template-columns:1fr}.modal-form textarea,.modal-form .full,.modal-form-submit{grid-column:1}.modal-agent{flex-direction:column;align-items:flex-start}.modal-agent-actions{margin-left:0;width:100%}.modal-agent-actions a{flex:1;justify-content:center}.modal-gallery{height:260px}.modal-stats{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -290,8 +290,8 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
       <h2 class="section-title">Our <em>Listings</em></h2>
     </div>
     <div class="filter-tabs">
-      <button class="filter-tab active" onclick="switchTab('active',this)">My Listings (6)</button>
-      <button class="filter-tab" onclick="switchTab('sold',this)">My Sold Listings (57)</button>
+      <button class="filter-tab active" onclick="switchTab('active',this)">Our Listings (6)</button>
+      <button class="filter-tab" onclick="switchTab('sold',this)">Our Sold Listings (57)</button>
     </div>
   </div>
   <div class="properties-grid" id="grid-active"></div>
@@ -344,29 +344,49 @@ footer{background:#111;padding:4rem 8% 2.5rem;color:rgba(255,255,255,.5)}
   </div>
 </div>
 
-<section id="about">
-  <div class="about-section">
-    <div class="about-images">
-      <img class="about-img-main" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/public/profile-images/34617-1687404758-P1n2hPvjni8pYDh9btwcGMXP0WP5zbJo.jpg" alt="Team Exceed">
-      <img class="about-img-accent" src="https://arizto-assets-prod.s3-ap-southeast-2.amazonaws.com/listing-images/HD1080_size/2025/Oct/14009/LI-14009-1759449307-35TpCxrTLBjGgRs8eP6E9mdG0Pza0KMg.jpg" alt="Whakatane">
-      <div class="about-card-float"><div class="num">57+</div><div class="lbl">Properties Sold</div></div>
-    </div>
-    <div class="about-content">
-      <span class="section-label">About the Team</span>
-      <h2 class="section-title">Born &amp; Raised in <em>Whakatāne</em></h2>
-      <p class="about-text">Scott and Stuart's combined years in the industry make them the most experienced agents in our district. When it comes to skillsets required to perform effectively — customer relations, negotiating a sale, qualifying buyers — many agents, despite some time in the industry, are still learning what is just instinctive to this team.</p>
-      <p class="about-text">Both are well known in the community and have contributed meaningfully. Stuart was chair of the Whakatane Community Patrol for 10 years, and Scott served 12 years on the District Council — third generation of his family to do so. Scott is still active in Theatre Whakatane, on committee and in productions.</p>
-      <p class="about-text">When working with these guys, there is a genuine element of trust; they communicate well, and both have received notable awards for achievement in sales.</p>
-      <div class="about-chips">
-        <span class="chip">25+ Years Experience</span>
-        <span class="chip">Award-Winning</span>
-        <span class="chip">Whakatāne Locals</span>
-        <span class="chip">Community Leaders</span>
-        <span class="chip">No Upfront Costs</span>
-        <span class="chip">Licensed REAA 2008</span>
+<section id="about" style="background:var(--white);padding:5rem 8%;">
+  <div style="text-align:center;margin-bottom:3.5rem;">
+    <div class="section-label">The Team</div>
+    <h2 class="section-title">Meet <em>Team Exceed</em></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;">
+
+    <!-- Scott Jarrett -->
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <div style="width:180px;height:180px;border-radius:50%;overflow:hidden;background:#111;margin-bottom:1.5rem;flex-shrink:0;border:3px solid var(--sand-dark);">
+        <img src="Scott_Jarrett.png" alt="Scott Jarrett" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
       </div>
-      <a href="#appraisal" class="btn-primary" style="display:inline-flex">Get Free Appraisal <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <h3 style="font-family:var(--font-serif);font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;">Scott Jarrett</h3>
+      <div style="font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-bottom:1rem;">Licensed Salesperson · REAA 2008</div>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">Scott is a seasoned real estate agent with over 25 years of experience in the Bay of Plenty, known for connecting clients with excellent homes through a genuine and positive experience.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">He effectively utilizes Arizto's advanced sales techniques, offering digital platforms, complimentary marketing, and competitive commissions.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;">Beyond real estate, Scott has served as a Whakatāne District Councillor for 12 years and is recognised for his involvement in Theatre Whakatāne. His deep understanding of the region's history and infrastructure enhances his ability to serve clients effectively.</p>
     </div>
+
+    <!-- Stuart Lougher -->
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <div style="width:180px;height:180px;border-radius:50%;overflow:hidden;background:#111;margin-bottom:1.5rem;flex-shrink:0;border:3px solid var(--sand-dark);">
+        <img src="Stuart_Lougher.png" alt="Stuart Lougher" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+      </div>
+      <h3 style="font-family:var(--font-serif);font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;">Stuart Lougher</h3>
+      <div style="font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-bottom:1rem;">Licensed Salesperson · REAA 2008</div>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">Stuart's passion for sales began in the motor trade before transitioning to real estate in 1992, a field in which he has thrived for 32 years.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">Now with Arizto, his success is reflected in a strong track record of repeat and referral business, underscoring his dedication to exceptional service in real estate transactions.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;">Stuart is committed to his community, having served as Chairman of the Whakatane Community Patrol for a decade and was instrumental in setting up a CCTV network to enhance safety in key town areas. Always approachable, Stuart remains available to assist with queries and provide guidance.</p>
+    </div>
+
+    <!-- Michelle Gibbons-King -->
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <div style="width:180px;height:180px;border-radius:50%;overflow:hidden;background:#111;margin-bottom:1.5rem;flex-shrink:0;border:3px solid var(--sand-dark);">
+        <img src="Michelle_Gibbons-King.png" alt="Michelle Gibbons-King" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+      </div>
+      <h3 style="font-family:var(--font-serif);font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:.25rem;">Michelle Gibbons-King</h3>
+      <div style="font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--forest);margin-bottom:1rem;">Licensed Salesperson · REAA 2008</div>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">Michelle has been part of the real estate world for over 20 years, working across roles including office manager, salesperson, and personal assistant.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;margin-bottom:.85rem;">This wide-ranging experience means she really understands how the industry works and how to support clients through every step of their property journey.</p>
+      <p style="font-size:.9rem;color:var(--ink-mid);font-weight:300;line-height:1.8;">Now as a Sales Associate and PA with Team EXCEED, Michelle continues to bring her knowledge, organisation skills, and friendly approach to help deliver great results.</p>
+    </div>
+
   </div>
 </section>
 
