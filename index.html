@@ -625,8 +625,9 @@ window.renderProperties = function(properties) {
     if (cars)      feats.push(`<span class="prop-feat">${carIcon} ${cars} park</span>`);
     if (floorArea) feats.push(`<span class="prop-feat">${areaIcon} ${floorArea}m²</span>`);
 
+    const safeData = JSON.stringify(JSON.stringify(p)).replace(/'/g, '&#39;');
     const card = `
-    <div class="prop-card" onclick='openPropModal(${JSON.stringify(JSON.stringify(p))})'>
+        <div class="prop-card" onclick='openPropModal(${safeData})'>
       <div class="prop-img-wrap">
         <img class="prop-img" src="${img}" alt="${address}" loading="lazy">
         <span class="prop-status ${isSold ? 'sold' : 'sale'}">${isSold ? 'Sold' : 'For Sale'}</span>
