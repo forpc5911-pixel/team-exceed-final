@@ -720,12 +720,50 @@ function submitEnquiry() {
   document.getElementById('mf-success').classList.add('show');
 }
 
-function submitAppraisal() {
+async function submitAppraisal() {
   const fname = document.getElementById('af-fname').value.trim();
+  const lname = document.getElementById('af-lname').value.trim();
   const email = document.getElementById('af-email').value.trim();
+  const phone = document.getElementById('af-phone').value.trim();
+  const addr  = document.getElementById('af-addr').value.trim();
+
   if (!fname || !email) { alert('Please enter your name and email.'); return; }
-  document.getElementById('af-form').style.display = 'none';
-  document.getElementById('af-success').classList.add('show');
+
+  const submitBtn = document.querySelector('.af-submit');
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+
+  const formData = {
+    access_key: '05fa6b4e-c838-43e9-b2b0-0c1c90a57116',   // ← paste your key here
+    subject: 'New Appraisal Request – Team Exceed',
+    from_name: 'Team Exceed Website',
+    name: fname + ' ' + lname,
+    email: email,
+    phone: phone,
+    message: 'Property Address: ' + addr
+  };
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      document.getElementById('af-form').style.display = 'none';
+      document.getElementById('af-success').classList.add('show');
+    } else {
+      alert('Something went wrong. Please try again or call us directly.');
+      submitBtn.textContent = 'Request Free Appraisal →';
+      submitBtn.disabled = false;
+    }
+  } catch (err) {
+    alert('Network error. Please try again.');
+    submitBtn.textContent = 'Request Free Appraisal →';
+    submitBtn.disabled = false;
+  }
 }
 
 // ── Mobile menu ───────────────────────────────────────────────────────────────
