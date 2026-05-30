@@ -778,11 +778,10 @@ async function submitEnquiry() {
   const formData = {
     access_key: '05fa6b4e-c838-43e9-b2b0-0c1c90a57116',
     subject: 'New Property Enquiry – Team Exceed',
-    from_name: 'Team Exceed Website',
-    name: name,
-    email: email,
+    from_name: name,
+    replyto: email,
     phone: phone,
-    message: `Property: ${address}\n\n${msg}`
+    message: `Property Enquiry\nProperty: ${address}\nPhone: ${phone}\nMessage: ${msg}`
   };
 
   try {
