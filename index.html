@@ -777,11 +777,11 @@ async function submitEnquiry() {
 
   const formData = {
     access_key: '05fa6b4e-c838-43e9-b2b0-0c1c90a57116',
-    subject: 'New Property Enquiry – Team Exceed',
-    from_name: name,
+    subject: 'New Appraisal Request – Team Exceed',
+    from_name: fname + ' ' + lname,
     replyto: email,
     phone: phone,
-    message: `Property Enquiry\nProperty: ${address}\nPhone: ${phone}\nMessage: ${msg}`
+    message: 'Property Address: ' + addr
   };
 
   try {
@@ -823,11 +823,11 @@ async function submitAppraisal() {
 
   const formData = {
     access_key: '05fa6b4e-c838-43e9-b2b0-0c1c90a57116',
-    subject: 'New Property Enquiry – Team Exceed',
-    from_name: name,
+    subject: 'New Appraisal Request – Team Exceed',
+    from_name: fname + ' ' + lname,
     replyto: email,
     phone: phone,
-    message: `Property Enquiry\nProperty: ${address}\nPhone: ${phone}\nMessage: ${msg}`
+    message: 'Property Address: ' + addr
   };
 
   try {
