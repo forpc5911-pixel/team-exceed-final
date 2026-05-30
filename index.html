@@ -760,11 +760,53 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Forms ─────────────────────────────────────────────────────────────────────
-function submitEnquiry() {
+async function submitEnquiry() {
   const name  = document.getElementById('mf-name').value.trim();
   const email = document.getElementById('mf-email').value.trim();
+  const phone = document.getElementById('mf-phone').value.trim();
+  const msg   = document.getElementById('mf-msg').value.trim();
+
   if (!name || !email) { alert('Please enter your name and email.'); return; }
-  document.getElementById('mf-success').classList.add('show');
+
+  const submitBtn = document.querySelector('.modal-form-submit');
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+
+  // Get the current property address from the modal
+  const address = document.getElementById('modal-address').querySelector('span').textContent;
+
+  const formData = {
+    access_key: '05fa6b4e-c838-43e9-b2b0-0c1c90a57116',
+    subject: 'New Property Enquiry – Team Exceed',
+    from_name: 'Team Exceed Website',
+    name: name,
+    email: email,
+    phone: phone,
+    message: `Property: ${address}\n\n${msg}`
+  };
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      document.getElementById('mf-success').classList.add('show');
+      submitBtn.textContent = 'Send Enquiry →';
+      submitBtn.disabled = false;
+    } else {
+      alert('Something went wrong. Please try again or call us directly.');
+      submitBtn.textContent = 'Send Enquiry →';
+      submitBtn.disabled = false;
+    }
+  } catch (err) {
+    alert('Network error. Please try again.');
+    submitBtn.textContent = 'Send Enquiry →';
+    submitBtn.disabled = false;
+  }
 }
 
 async function submitAppraisal() {
