@@ -690,7 +690,8 @@ window.openPropModal = function(jsonStr) {
 if (window._liveProperties) window.renderProperties(window._liveProperties);
 // ── Reviews from Firebase ─────────────────────────────────────────────────
 window.renderReviews = function(reviews) {
-  const grid = document.getElementById('testimonials-grid');
+  if (!grid) return;
+  if (!reviews || !reviews.length) { grid.innerHTML = ''; return; }
   if (!grid || !reviews || !reviews.length) return;
 
   const colorMap = {
